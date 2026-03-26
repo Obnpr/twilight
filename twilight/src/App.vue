@@ -1,31 +1,68 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import viewHeader from '../src/views/HeaderView.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
+    <viewHeader></viewHeader>
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
-
-  <RouterView />
+    <div class="content-container-mother">
+        <RouterView />
+    </div>
 </template>
 
+# AVOID USING IF POSSIBLE
+<style>
+html, body {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgba(0, 0, 0, 0.5)"><circle cx="12" cy="12" r="10" stroke="white" stroke-width="2" fill="white"/></svg>') 12 12, auto !important; 
+}
+</style>
+
 <style scoped>
+/* Mouse Related */
+
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   line-height: 1.5;
-  max-height: 100vh;
+  height: 25vh;
+  width: 120vh;
+  min-height: 20vh;
+  min-width: 100%;
+  max-height: 25vh;
 }
 
+.content-container-mother {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container-child { /* #fcf79b more yellow */
+  background-color: #eff0d1;
+  grid-template-columns: 1fr;
+  gap: 0px;
+  color: black;
+  padding: 30px;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/*
 .logo {
   display: block;
   margin: 0 auto 2rem;
@@ -82,4 +119,5 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
+*/
 </style>
