@@ -4,7 +4,7 @@
             <div>
                 <h1>I'm Obed Negrón.</h1>
                 <h2>Multimedia Producer, video-game developer, Front-End enthusiast.</h2>
-                <p>Undergraduate student with a knowledge of  on multimedia production, software, with a bit of front-end dev. Experienced in computer's OS like Linux (Debian), hardware, video game development.</p>
+                <p>Undergraduate student with a knowledge of on multimedia production, PC hardware, video game development, and a bit of front-end dev. Experienced in Linux systems like Debian and Arch.</p>
             </div>
             <div class="photo-container" >
                 <figure>
@@ -19,23 +19,19 @@
 </template>
 
 <style scoped>
-. {
-    margin-top: 7rem;
-}
-
 article {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 40vh;
+    height: 50vh;
 }
 
 article div {
     flex: 1;
     max-width: 50%;
     width: 50%;
-    margin-left: 3rem;;
+    margin-left: 3.5rem;
 }
 
 img {

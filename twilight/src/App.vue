@@ -1,16 +1,17 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import viewHeader from './views/HeaderView.vue'
-import viewFooter from './views/FooterView.vue'
-const disabledMenu = ref(false)
-/*const isMenuOpen = ref(false)*/
+  import { ref } from 'vue'
+  import { RouterLink, RouterView } from 'vue-router'
+  import viewHeader from './views/HeaderView.vue'
+  import viewFooter from './views/FooterView.vue'
+  const disabledMenu = ref(false)
+  /*const isMenuOpen = ref(false)*/
 </script>
 
 <template>
   <header>
     <div class="header-sort">
       <div class="header-logo"><viewHeader></viewHeader></div>
-        <div class="header-nav">
+        <div v-if="disabledMenu" class="header-nav">
           <nav>
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="/about">About</RouterLink>
