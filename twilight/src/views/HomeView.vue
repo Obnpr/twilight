@@ -6,6 +6,7 @@
 </script>
 
 <template>
+  <title>Obed Negrón | Portfolio</title>
   <div class="structured-notepad" >
     <div class="structured-notepad-top"><h1>Made In Puerto Rico</h1></div>
     <main class="structured-notepad-bottom" >
@@ -21,7 +22,6 @@
 </template>
 
 <style scoped>
-
 .structured-notepad {
   display: flex;
   flex-direction: column;
@@ -55,6 +55,7 @@
 .structured-notepad-bottom div {
   width: 100vh;
   background-color: #eff0d1;
+  border-radius: 0px 0px 2px 2px;
   grid-template-columns: 1fr;
   gap: 0px;
   color: black;

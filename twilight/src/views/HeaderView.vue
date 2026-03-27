@@ -14,6 +14,7 @@
     </div>
 </template>
 
+
 <style scoped>
 .logo-title {
     display: flex;
