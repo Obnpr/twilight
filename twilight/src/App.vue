@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import viewHeader from '../src/views/HeaderView.vue'
+import viewHeader from './views/HeaderView.vue'
 </script>
 
 <template>
   <header>
-    <viewHeader></viewHeader>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+    <div class="header-sort">
+      <div class="header-logo"><viewHeader></viewHeader></div>
+      <div class="header-nav">
+        <nav class="header-">
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+        </nav>
+      </div>
     </div>
   </header>
     <div class="content-container-mother">
@@ -18,10 +20,15 @@ import viewHeader from '../src/views/HeaderView.vue'
     </div>
 </template>
 
-# AVOID USING IF POSSIBLE
+# AVOID USING STYLE w/o SCOPED, IF POSSIBLE
 <style>
 html, body {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgba(0, 0, 0, 0.5)"><circle cx="12" cy="12" r="10" stroke="white" stroke-width="2" fill="white"/></svg>') 12 12, auto !important; 
+}
+
+hr {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 </style>
 
@@ -34,10 +41,39 @@ header {
   align-items: center;
   line-height: 1.5;
   height: 25vh;
-  width: 120vh;
   min-height: 20vh;
-  min-width: 100%;
   max-height: 25vh;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.634));
+}
+
+.header-sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  flex-direction: column;
+  min-width: 100%;
+}
+
+.header-logo div {
+  width: 50vh;
+}
+
+.header-nav {
+  font-size: 2rem;
+
+}
+
+.header-nav a {
+  background: #eff0d1;
+  border-radius: 10px 10px 10px 10px;
+  margin-right: 1.5rem;
+  display: blow;
+  padding: 0.4rem;
+  border: 2px solid black;
 }
 
 .content-container-mother {
@@ -58,7 +94,7 @@ header {
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    filter: brightness(0.7);
   }
 }
 

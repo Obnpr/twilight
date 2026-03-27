@@ -5,8 +5,8 @@
         <div>
             <figure>
             <img
-                src="/logo/multimediaProducer.webp"
-                alt="Camera icon for Video Editing, Microphone for Audio Mixing, and an image for image editing."
+                src="../assets/logo/multimediaProducer.webp"
+                alt="Film icon for Video Editing."
             />
             </figure>
             <p>Multimedia Producer</p>
@@ -14,7 +14,7 @@
         <div>
             <figure>
             <img
-                src="/logo/C++.webp"
+                src="../assets/logo/C++.webp"
                 alt="C++ Logo"
             />
             </figure>
@@ -23,7 +23,7 @@
         <div>
             <figure>
             <img
-                src="/logo/Godot.webp"
+                src="../assets/logo/Godot.webp"
                 alt="Godot Engine Logo"
             />
             </figure>
@@ -32,7 +32,7 @@
         <div>
             <figure>
             <img
-                src="/logo/HTML5.webp"
+                src="../assets/logo/HTML5.webp"
                 alt="HTML5 Logo"
             />
             </figure>
@@ -41,7 +41,7 @@
         <div>
             <figure>
             <img
-                src="/logo/CSS3.webp"
+                src="../assets/logo/CSS3.webp"
                 alt="CSS3 Logo"
             />
             </figure>
@@ -50,7 +50,7 @@
         <div>
             <figure>
             <img
-                src="/logo/Debian.webp"
+                src="../assets/logo/Debian.webp"
                 alt="Debian Logo"
             />
             </figure>
@@ -59,13 +59,13 @@
         <div>
             <figure>
             <img
-                src="/logo/Docker.webp"
+                src="../assets/logo/Docker.webp"
                 alt="Docker Container Logo"
             />
             </figure>
             <p>Docker</p>
         </div>
-        </div>
+    </div>
     </article>
     <article className="pf-aboutme-main-content-skills">
     <h2>Additional skills</h2>
@@ -73,7 +73,7 @@
         <li>
             <figure>
             <img
-                src="/logo/CSharp.webp"
+                src="../assets/logo/CSharp.webp"
                 alt="C# Logo"
             />
             </figure>
@@ -82,7 +82,7 @@
         <li>
             <figure>
             <img
-                src="/logo/DotNet.webp"
+                src="../assets/logo/DotNet.webp"
                 alt="Dot Net Logo"
             />
             </figure>
@@ -91,7 +91,7 @@
         <li>
             <figure>
             <img
-                src="/logo/Python.webp"
+                src="../assets/logo/Python.webp"
                 alt="Python Logo"
             />
             </figure>
@@ -100,7 +100,7 @@
         <li>
             <figure>
             <img
-                src="/logo/React.webp"
+                src="../assets/logo/React.webp"
                 alt="React Logo"
             />
             </figure>
@@ -109,7 +109,7 @@
         <li>
             <figure>
             <img
-                src="/logo/Javascript.webp"
+                src="../assets/logo/Javascript.webp"
                 alt="Javascript Logo"
             />
             </figure>
@@ -118,7 +118,7 @@
         <li>
             <figure>
             <img
-                src="/logo/Ubiquiti.webp"
+                src="../assets/logo/Ubiquiti.webp"
                 alt="Ubiquiti Logo"
             />
             </figure>
@@ -142,12 +142,10 @@
   flex-wrap: wrap;
 }
 
-.pf-aboutme-main-content-skills h2 {
-  text-align: center;
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+.pf-aboutme-main-content-skills {
+    max-width: 100%;
 }
+
 
 .pf-aboutme-content-skills-table li {
   display: flex;

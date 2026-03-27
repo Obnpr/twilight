@@ -1,16 +1,29 @@
 @import './base.css';
-a,
-.green {
+a {
   text-decoration: none;
-  color: #00bd7e;
+  color: #000000;
   transition: 0.4s;
   padding: 3px;
 }
 
 body{
-  background-image: url('/portfolio/background1.webp');
+  background-image: url('./portfolio/background2.webp');
   background-size: contain;
   background-position: center;
 }
 
+h1 {
+  font-size: 5vh;
+}
 
+h2 {
+  font-size: 2.6vh;
+}
+
+h3 {
+  font-size: 1.8vh;
+}
+
+p {
+  font-size: 1.8vh;
+}
