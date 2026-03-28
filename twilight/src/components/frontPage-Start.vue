@@ -31,7 +31,7 @@ article div {
     flex: 1;
     max-width: 50%;
     width: 50%;
-    margin-left: 3.5rem;
+    margin-left: 3vh;
 }
 
 img {

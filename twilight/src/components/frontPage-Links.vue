@@ -54,8 +54,7 @@ a:hover {
 h1 {
     display: flex;
     justify-content: center;
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4vh;
 }
 
 </style>
