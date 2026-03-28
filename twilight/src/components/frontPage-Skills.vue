@@ -65,12 +65,14 @@
             </div>
         </div>
     </article>
-    <div>
-        <a class="more-button" @click="toggleMenu">
+
+    <div class="more-button">
+        <a @click="toggleMenu">
             <img class="more-button" type="image" :src="moreButtonSrc" alt="Expand button for more Skills" />
             <p class="more-button">{{ moreButtonText }}</p>
         </a>
     </div>
+
     <Transition name="slide">
     <h2 v-if="isMoreSkillsOpen">Skills</h2>
     </Transition>
@@ -287,6 +289,12 @@ figure {
     justify-content: center;
     align-items: center;
     min-width: 100%;
+    margin-left: 0vh;
+    margin-right: 0vh;
+}
+
+.more-button a {
+    cursor: pointer;
 }
 
 .more-button img {

@@ -47,7 +47,6 @@
 }
 
 a:hover {
-  color: #ffffff;
   transform: scale(1.06);
 }
 
