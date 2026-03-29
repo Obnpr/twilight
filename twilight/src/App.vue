@@ -3,7 +3,7 @@
   import { RouterLink, RouterView } from 'vue-router'
   import viewHeader from './views/HeaderView.vue'
   import viewFooter from './views/FooterView.vue'
-  const disabledMenu = ref(false)
+  const disabledMenu = ref(true)
   /*const isMenuOpen = ref(false)*/
 </script>
 
@@ -14,7 +14,8 @@
         <div v-if="disabledMenu" class="header-nav">
           <nav>
             <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/about">About</RouterLink>
+            <RouterLink to="/portfolio">Portfolio</RouterLink>
+            <RouterLink to="/backlog"> Game Backlog</RouterLink>
           </nav>
         </div>
     </div>
@@ -75,21 +76,23 @@ footer {
   min-width: 80%;
 }
 
-.header-logo div {
+.header-nav nav {
+  display: flex;
+  justify-content: center;
   width: 50vh;
-}
-
-.header-nav {
   font-size: 2rem;
+  min-height: 5vh;
+  gap: 1vh;
 }
 
 .header-nav a {
+  max-width: 26vh;
+  min-height: 5.5vh;
+  display: flex;
+  align-items: center;
   background: #eff0d1;
-  border-radius: 10px 10px 10px 10px;
-  margin-right: 1.5rem;
-  display: blow;
+  border-radius: 7px 7px 7px 7px;
   padding: 0.4rem;
-  border: 2px solid black;
 }
 
 .content-container-mother {
@@ -110,18 +113,39 @@ footer {
 }
 
 @media (hover: hover) {
-  a:hover {
-    filter: brightness(0.7);
-  }
+a:hover {
+    filter: brightness(0.8);
+}
 }
 
 @media (max-width: 500px) {
-  header {
-    height: 15vh;
-    min-height: 15vh;
-    max-height: 15vh;
-    width: 100%;
-    min-width: 100%;
-  }
+header {
+  height: 30vh;
+  min-height: 15vh;
+  max-height: 30vh;
+  width: 100%;
+  min-width: 100%;
+}
+
+.header-nav {
+  min-height: 8.7vh;
+  font-size: 1.6rem;
+  
+}
+
+.header-nav nav {
+
+  width: 40vh;
+  flex-wrap: wrap;
+  font-size: 2rem;
+}
+
+.header-nav a {
+  display: flex;
+  align-items: center;
+  max-width: 26vh;
+  min-height: 5.5vh;
+}
+
 }
 </style>
