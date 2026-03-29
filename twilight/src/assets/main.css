@@ -1,11 +1,4 @@
 @import './base.css';
-a {
-  text-decoration: none;
-  color: #000000;
-  transition: 0.4s;
-  padding: 3px;
-}
-
 body{
   background-image: url('./portfolio/background2.webp');
   background-size: contain;
@@ -32,6 +25,13 @@ p {
 hr {
   margin-top: 2vh;
   margin-bottom: 1.5vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  transition: 0.4s;
+  padding: 3px;
 }
 
 @media (max-width: 500px) {
