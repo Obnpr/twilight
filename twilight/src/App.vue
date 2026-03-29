@@ -3,7 +3,7 @@
   import { RouterLink, RouterView } from 'vue-router'
   import viewHeader from './views/HeaderView.vue'
   import viewFooter from './views/FooterView.vue'
-  const disabledMenu = ref(true)
+  const disabledMenu = ref(false)
   /*const isMenuOpen = ref(false)*/
 </script>
 

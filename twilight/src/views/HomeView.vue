@@ -2,7 +2,6 @@
   import compoStart from '../components/frontPage-Start.vue'
   import compoLinks from '../components/frontPage-Links.vue'
   import compoSkills from '../components/frontPage-Skills.vue'
-
 </script>
 
 <template>

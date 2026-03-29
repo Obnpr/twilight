@@ -8,10 +8,10 @@
             </div>
             <div class="photo-container" >
                 <figure>
-                <img 
-                src="../assets/pictures/profile-icon-1.jpg"
-                alt="A picture of Obed Negron"
-                />
+                    <img 
+                    src="../assets/pictures/profile-icon-1.jpg"
+                    alt="A picture of Obed Negron"
+                    />
                 </figure>
             </div>
         </article>
@@ -53,7 +53,7 @@ img {
 @media (max-width: 500px) {
 article {
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
 }
 
 article div {
@@ -63,6 +63,12 @@ article div {
     margin-left: 0vh;
 }
 
+h2 {
+  font-size: 2.7vh;
 }
 
+p {
+  font-size: 1.9vh;
+}
+}
 </style>
