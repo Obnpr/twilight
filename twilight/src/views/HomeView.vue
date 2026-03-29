@@ -28,10 +28,11 @@
   align-items: center;
 }
 
-
 .structured-notepad-top {
   height: 10vh;
   width: 100vh;
+  min-width: 40vh;
+  max-width: 150vh;
   background: linear-gradient(to bottom, #7b5749 10%, #3c2823 100%);
   border-radius: 16px 16px 0px 0px;
   color: #b17b66;
@@ -53,7 +54,8 @@
 }
 
 .structured-notepad-bottom div {
-  width: 100vh;
+  min-width: 40vh;
+  max-width: 100vh;
   background-color: #eff0d1;
   border-radius: 0px 0px 2px 2px;
   grid-template-columns: 1fr;
@@ -62,6 +64,26 @@
   padding: 30px;
   box-sizing: border-box;
   list-style-type: none;
+}
+
+@media (max-width: 500px) {
+.structured-notepad-top {
+  height: 10vh;
+  width: 100vh;
+  min-width: 30vh;
+  max-width: 40vh;
+}
+
+.structured-notepad-top h1 {
+  font-size: 1rem;
+}
+
+.structured-notepad-bottom div {
+  width: 40vh;
+  min-width: 30vh;
+  max-width: 40vh;
+}
+
 }
 
 </style>

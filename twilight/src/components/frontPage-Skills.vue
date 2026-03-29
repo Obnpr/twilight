@@ -261,7 +261,6 @@ img {
 h1 {
     display: flex;
     justify-content: center;
-    margin-bottom: 5vh;
 }
 
 h2 {
@@ -270,16 +269,16 @@ h2 {
 }
 
 p {
-  display: flex;
-  align-items: center;
-  font-size: 1.8rem;
-  margin-left: 0.8rem;
+  font-size: 2.6vh;
+  margin-left: 1.5vh;
   height: 100%;
 }
 
 figure {
   margin: 0%;
+  max-height: 10vh;
 }
+
 
 .more-button {
     margin-top: 3vh;

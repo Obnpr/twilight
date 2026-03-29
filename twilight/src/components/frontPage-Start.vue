@@ -35,12 +35,8 @@ article div {
 }
 
 img {
-    height: 22vh;
+    height: 30vh;
     object-fit: scale-down;
-}
-
-p {
-    margin-top: 1.6rem;
 }
 
 .photo-container {
@@ -52,6 +48,21 @@ p {
 .photo-container figure {
     width: auto;
     height: auto;
+}
+
+@media (max-width: 500px) {
+article {
+    flex-direction: column;
+    height: 80vh;
+}
+
+article div {
+    width: 100%;
+    max-width: 100%;
+    min-width: 70%;
+    margin-left: 0vh;
+}
+
 }
 
 </style>

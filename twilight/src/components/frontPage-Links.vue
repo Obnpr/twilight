@@ -29,16 +29,20 @@
 }
 .container-mother div {
     display: flex;
-    flex: 1;
     flex-direction: row;
+    width: 30vh;
 }
 
 .container-child figure, h2 {
     display: flex;
     flex: 1;
-    width: 15vh;
+    min-width: 4vh;
     justify-content: center;
     align-items: center;
+}
+
+.container-child h2 {
+    max-height: 0vh;
 }
 
 .container-child img {
@@ -53,7 +57,7 @@ a:hover {
 h1 {
     display: flex;
     justify-content: center;
-    margin-bottom: 4vh;
+    
 }
 
 </style>

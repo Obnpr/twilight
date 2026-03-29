@@ -35,4 +35,23 @@ h1 {
     font-weight: bold;
     color: white;
 }
+
+@media (max-width: 500px) {
+.logo-title {
+    width: 100%;
+    gap: 1rem;
+}
+
+img {
+    max-height: 8vh;
+    font-size: 15vh;
+}
+
+h1 {
+    font-size: 4vh;
+    font-weight: bold;
+    color: white;
+}
+
+}
 </style>

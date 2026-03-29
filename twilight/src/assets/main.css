@@ -14,16 +14,53 @@ body{
 
 h1 {
   font-size: 4vh;
+  margin: 0vh;
 }
 
 h2 {
-  font-size: 2.6vh;
+  font-size: 3.2vh;
 }
 
 h3 {
-  font-size: 1.8vh;
+  font-size: 2.6vh;
 }
 
 p {
   font-size: 1.8vh;
+}
+
+hr {
+  margin-top: 2vh;
+  margin-bottom: 1.5vh;
+}
+
+@media (max-width: 500px) {
+body{
+  background-image: url('./portfolio/background2.webp');
+  background-size: contain;
+  background-position: center;
+}
+
+h1 {
+  font-size: 4vh;
+  margin: 0vh;
+}
+
+h2 {
+  font-size: 2.8vh;
+}
+
+h3 {
+  font-size: 2vh;
+}
+
+p {
+  font-size: 1.8vh;
+}
+
+hr {
+  margin-top: 2vh;
+  margin-bottom: 1.5vh;
+}
+
 }

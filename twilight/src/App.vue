@@ -29,28 +29,21 @@
 
 # AVOID USING STYLE w/o SCOPED, IF POSSIBLE
 <style>
-html,
-body {
+/* Mouse Related */
+html, body {
   cursor:
     url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgba(0, 0, 0, 0.5)"><circle cx="12" cy="12" r="10" stroke="white" stroke-width="2" fill="white"/></svg>')
       12 12,
     auto !important;
 }
-
-hr {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
 </style>
 
 <style scoped>
-/* Mouse Related */
-
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 1.5;
+  line-height: 1.5vh;
   height: 25vh;
   min-height: 20vh;
   max-height: 25vh;
@@ -122,62 +115,13 @@ footer {
   }
 }
 
-/*
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
+@media (max-width: 500px) {
   header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+    height: 15vh;
+    min-height: 15vh;
+    max-height: 15vh;
+    width: 100%;
+    min-width: 100%;
   }
 }
-*/
 </style>
