@@ -316,4 +316,50 @@ figure {
   transform: translateY(-20px);
 }
 
+@media (max-width: 500px) {
+div {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 1vh;
+    margin-left: 0vh;
+    margin-right: 0vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+article {
+    max-width: 100%;
+    margin-bottom: 0vh;
+}
+
+img {
+    object-fit: contain;
+    max-height: 6vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    font-size: 2.3vh;
+    margin: 0%;
+    height: 100%;
+}
+
+figure {
+    max-height: 10vh;
+    margin-right: 2vh;
+}
+
+}
 </style>
