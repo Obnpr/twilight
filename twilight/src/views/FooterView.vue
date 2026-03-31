@@ -29,4 +29,18 @@
     font-size: 1.8vh;
   }
 
+@media (max-width: 500px) {
+div {
+  flex-direction: column;
+  width: 100%;
+}
+
+div a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.8vh;
+}
+
+}
+
 </style>
