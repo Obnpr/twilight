@@ -40,7 +40,5 @@ div a {
   text-decoration: none;
   font-size: 1.8vh;
 }
-
 }
-
 </style>
