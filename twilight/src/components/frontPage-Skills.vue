@@ -77,7 +77,7 @@
     <h2 v-if="isMoreSkillsOpen">Skills</h2>
     </Transition>
     <Transition name="slide">
-    <article v-if="isMoreSkillsOpen">
+    <article v-if="isMoreSkillsOpen" class="container-formating">
         <div>
             <div>
                 <figure>
@@ -131,7 +131,7 @@
         <h2 v-if="isMoreSkillsOpen">Additional skills</h2>    
     </Transition>
     <Transition name="slide">
-        <article v-if="isMoreSkillsOpen">
+        <article class="container-formating" v-if="isMoreSkillsOpen" >
             <div>
                 <div>
                     <figure>
@@ -203,7 +203,7 @@
     <h2 v-if="isMoreSkillsOpen">Personal toolkit</h2>
     </Transition>
     <Transition name="slide">
-        <article v-if="isMoreSkillsOpen">
+        <article class="container-formating" v-if="isMoreSkillsOpen">
             <div>
                 <div>
                     <figure>
@@ -359,6 +359,10 @@ p {
 figure {
     max-height: 10vh;
     margin-right: 2vh;
+}
+
+.container-formating div {
+    width: 30vh;
 }
 
 }

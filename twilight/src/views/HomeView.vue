@@ -2,6 +2,7 @@
   import compoStart from '../components/frontPage-Start.vue'
   import compoLinks from '../components/frontPage-Links.vue'
   import compoSkills from '../components/frontPage-Skills.vue'
+  import compoAbout from '../components/frontPage-About.vue'
 </script>
 
 <template>
@@ -11,6 +12,8 @@
     <main class="structured-notepad-bottom" >
       <div>
         <compoStart></compoStart>
+        <hr>
+        <compoAbout></compoAbout>
         <hr>
         <compoLinks></compoLinks>
         <hr>

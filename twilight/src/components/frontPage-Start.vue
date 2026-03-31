@@ -37,6 +37,7 @@ article div {
 img {
     height: 30vh;
     object-fit: scale-down;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .photo-container {
