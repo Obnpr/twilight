@@ -6,7 +6,7 @@
 </script>
 
 <template>
-  <title>Obed Negrón | Portfolio</title>
+  <title>Obed Negrón | Home</title>
   <div class="structured-notepad" >
     <div class="structured-notepad-top"><h1>Made In Puerto Rico</h1></div>
     <main class="structured-notepad-bottom" >

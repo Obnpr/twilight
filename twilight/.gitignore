@@ -1,3 +1,6 @@
+# classic
+.env
+
 # Logs
 logs
 *.log

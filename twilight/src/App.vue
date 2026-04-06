@@ -3,7 +3,7 @@
   import { RouterLink, RouterView } from 'vue-router'
   import viewHeader from './views/HeaderView.vue'
   import viewFooter from './views/FooterView.vue'
-  const disabledMenu = ref(false)
+  const isMenuVisible = ref(true)
   /*const isMenuOpen = ref(false)*/
 </script>
 
@@ -11,7 +11,7 @@
   <header>
     <div class="header-sort">
       <div class="header-logo"><viewHeader></viewHeader></div>
-        <div v-if="disabledMenu" class="header-nav">
+        <div v-if="isMenuVisible" class="header-nav">
           <nav>
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="/portfolio">Portfolio</RouterLink>
@@ -130,7 +130,7 @@ header {
 .header-nav {
   min-height: 8.7vh;
   font-size: 1.6rem;
-  
+
 }
 
 .header-nav nav {
