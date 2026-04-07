@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { collection, getDocs } from "firebase/firestore";
-import { backlogDB } from "../firebase/firebase.js";
+import { backlogDB } from "/firebase-auth.ts";
 
 const games = ref([]);
 const loading = ref(true);
@@ -15,7 +15,12 @@ onMounted(async () => {
 
 <template>
   <div>
-    <div v-if="loading">Loading...</div>
+    {/*v-if="loading"*/}
+    <div class="loading-container">
+      <figure>
+        <img src="../assets/page-elements/loading-icon.gif">
+      </figure>
+    </div>
 
     <div class="backlog-showcase">
       <div class="game-box" v-for="game in games" :key="game.id">
@@ -39,6 +44,22 @@ onMounted(async () => {
 </template>
 
 <style scoped>
+.loading-container {
+  display: flex;
+  width: 100%;
+}
+
+.loading-container figure {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.loading-container img {
+  display: flex;
+  height: 10vh;
+}
+
 .backlog-showcase {
   display: flex;
   flex-direction: row;

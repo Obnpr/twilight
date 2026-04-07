@@ -13,8 +13,9 @@ export default defineConfig({
     vueDevTools(),
   ],
   resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    },
+  alias: {
+    '@': fileURLToPath(new URL('./src', import.meta.url)),
+    '~': fileURLToPath(new URL('./', import.meta.url)),
+  },
   },
 })

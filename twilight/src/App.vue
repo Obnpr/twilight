@@ -5,6 +5,7 @@
   import viewFooter from './views/FooterView.vue'
   const isMenuVisible = ref(true)
   /*const isMenuOpen = ref(false)*/
+
 </script>
 
 <template>
