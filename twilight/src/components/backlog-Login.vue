@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { user, login, logout } from "~/firebase-auth.ts";
+import compoMiddleModif from '../components/backlog-Login-Modification.vue'
 </script>
 
 <template>
@@ -8,10 +9,11 @@ import { user, login, logout } from "~/firebase-auth.ts";
     <div class="login-notlogged">
       <a class="login-notlogged-button" v-if="!user" @click="login">Admin Log-In</a>
     </div>
-    <div v-if="user" >
-      <h2>Welcome {{ user.displayName }}!</h2>
-      <a class="login-logged-button" @click="logout">Sign out</a>
+    <div v-if="user" class="topUserStatus">
+      <h2>Welcome, {{ user.displayName }}!</h2>
+      <div><a class="login-logged-button" @click="logout">Sign out</a></div>
     </div>
+    <compoMiddleModif></compoMiddleModif>
   </main>
 </template>
 
@@ -25,15 +27,19 @@ main div {
   min-width: 100%;
 }
 
+.topUserStatus h2, div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
+
 hr {
   border-top: 0.5vh dashed white;
   width: 100%;
   margin-top: 5vh;
   margin-bottom: 5vh;
-}
-
-h2 {
-
 }
 
 .login-notlogged {
@@ -64,11 +70,10 @@ h2 {
   justify-content: center;
   align-items: center;
   height: 5vh;
-  width: 25vh;
+  width: 15vh;
   background: #eff0d1;
   border-radius: 4px 4px 4px 4px;
   font-size: 2vh;
-
 }
 
 .login-logged-button:hover {

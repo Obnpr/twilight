@@ -11,11 +11,13 @@ onMounted(async () => {
   games.value = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
   loading.value = false;
 });
+
 </script>
 
 <template>
   <div>
-    {/*v-if="loading"*/}
+
+    {/* v-if="loading" */}
     <div class="loading-container">
       <figure>
         <img src="../assets/page-elements/loading-icon.gif">
@@ -32,14 +34,14 @@ onMounted(async () => {
             <h2>{{ game.name }}</h2>
             <p>Platform: {{ game.platform }}</p>
             <p>Status: {{ game.status }}</p>
-            <p v-if="game.finalRating">Rating: {{ game.finalRating }}</p>
-            <p v-if="game.finalThoughts">Final Thoughts:{{ game.
-  finalThoughts }}</p>
+            <p>Rating: {{ game.finalRating || 'N/A' }}</p>
+            <p v-if="game.finalThoughts">Final Thoughts: {{game.finalRating || 'N/A' }}</p>
+            <p>ID: {{ game.id }}</p>
           </div>
         </div>
       </div>
-
     </div>
+
   </div>
 </template>
 
@@ -68,7 +70,7 @@ onMounted(async () => {
 
 .game-box{
   display: flex;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   width: 50vh;
   height: 20vh;
   margin: 2vh;
