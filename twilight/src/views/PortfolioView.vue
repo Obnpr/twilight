@@ -1,6 +1,7 @@
 <script setup lang="ts">
-  import compoPartTitle from '../components/portfolio-part-title.vue'
-  import compoPartContent from '../components/portfolio-part-content.vue'
+  import compoPartTitle from '../components/portfolio-Title.vue'
+  import compoPartPersonalContent from '../components/portfolio-PersonalContent.vue'
+  import compoPartProfessionalContent from '../components/portfolio-ProfessionalContent.vue'
 </script>
 
 <template>
@@ -8,7 +9,8 @@
     <main class="structured-board">
       <div class="board-segments">
         <compoPartTitle></compoPartTitle>
-        <compoPartContent></compoPartContent>
+        <compoPartPersonalContent></compoPartPersonalContent>
+        <compoPartProfessionalContent></compoPartProfessionalContent>
       </div>
     </main>
 </template>

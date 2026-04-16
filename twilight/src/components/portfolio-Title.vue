@@ -8,9 +8,6 @@
           />
         </figure>
       </div>
-      <div>
-        <p>All content showned are altered re-creations of the original project, due to NDA contracts</p>
-      </div>
     </main>
 </template>
 

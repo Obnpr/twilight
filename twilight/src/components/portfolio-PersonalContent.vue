@@ -1,5 +1,8 @@
 <template>
     <main>
+      <div class="board-content-title">
+        <h1>Personal Projects</h1>
+      </div>
       <div>
         <div class="board-content-row">
           <div class="board-content-row-media">
@@ -24,11 +27,15 @@
           </div>
           <div class="board-content-row-text">
             <h1>Introduction to lense manufacturing</h1>
+            <div>
             <p>Information:</p>
-            <p>Client: N/A</p>
-            <p>Year: 2026</p>
+            <p>Created Year: 2026</p>
+            <p>Description: this is an cool desc.!</p>
+            </div>
+            <div>
+            <p>Specific Info:</p>
             <p>Role: Producer, Video Editor, Subtitle Editor, Audio Editor</p>
-            <p>Description: An interactive ~10 minute video explaining their lens creation.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -59,6 +66,17 @@ iframe {
   width: 90%;
 }
 
+.board-content-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-content-title h1 {
+  font-size: 5vh;
+  margin-bottom: 5vh;
+}
 
 .board-content-row {
   display: flex;
@@ -80,12 +98,18 @@ iframe {
 }
 
 .board-content-row-text {
+  display: flex;
   flex-direction: column;
   width: 150vh;
 }
 
 .board-content-row-text p {
   margin: 0%;
+}
+
+.board-content-row-text div {
+  display: flex;
+  flex-direction: column;
 }
 
 </style>
