@@ -1,16 +1,18 @@
 <script setup>
-import compoGameList from '../components/backlog-gamelist.vue'
-import compoBacklogLogin from '../components/backlog-Login.vue'
+import compoGameList from '../components/backlogContent.vue'
 </script>
 
 <template>
   <main>
   <title>Obed Negrón | Backlog</title>
-    <div class="board-segment">
+  <div class="notebook-loops">
+      <img
+      src="../assets/backlog/topLoops.png"
+      alt="A flip notebook's metal loops."
+      />
+  </div>
+    <div class="notebook-content">
       <compoGameList></compoGameList>
-    </div>
-    <div class="board-segment-shalk">
-    <compoBacklogLogin></compoBacklogLogin>
     </div>
   </main>
 </template>
@@ -20,46 +22,29 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0%;
 }
 
-.structured-board {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.notebook-loops {
+  width: 85vh;
+  height: 10vh;
 }
 
-.board-segment {
-  width: 120vh;
+.notebook-loops img {
+  width: 100%;
+  height: 100%;
+}
+
+.notebook-content {
+  width: 85vh;
   min-height: 80vh;
-  background-image: url('../assets/portfolio/background.svg');
+  background-color: #fef4ea;
   background-size: cover;
   background-position: center;
   border-radius: 2px 2px 2px 2px;
   gap: 0px;
   color: black;
   padding: 30px;
-}
-
-.board-segment-shalk {
-  width: 120vh;
-  min-height: 10vh;
-  background-image: url('../assets/portfolio/background.svg');
-  background-size: cover;
-  background-position: center;
-  border-radius: 2px 2px 2px 2px;
-  gap: 0px;
-  color: black;
-  padding: 30px;
-}
-
-button {
-  max-height: 10vh;
-  max-width: 30vh;
-}
-
-.test1 {
-  display: flex;
-  justify-content: center;
 }
 
 </style>
