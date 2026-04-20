@@ -1,5 +1,5 @@
 <script setup>
-import compoGameList from '../components/gamelogMD/db.md';
+import compoGameList from '../components/gamelogMD/gamelistdb.md';
 </script>
 
 <template>
@@ -16,4 +16,5 @@ import compoGameList from '../components/gamelogMD/db.md';
   justify-content: center;
   width: 100%;
 }
+
 </style>
