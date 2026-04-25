@@ -15,6 +15,7 @@
         <div v-if="isMenuVisible" class="header-nav">
           <nav>
             <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/collage-portfolio">Collage Portfolio</RouterLink>
             <RouterLink to="/portfolio">Portfolio</RouterLink>
             <RouterLink to="/backlog"> Game Backlog</RouterLink>
           </nav>
@@ -80,7 +81,7 @@ footer {
 .header-nav nav {
   display: flex;
   justify-content: center;
-  width: 50vh;
+  width: 70vh;
   font-size: 2rem;
   min-height: 5vh;
   gap: 1vh;
