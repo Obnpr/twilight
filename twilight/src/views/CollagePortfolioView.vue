@@ -6,6 +6,9 @@ import compoSkills from '../components/collage-portfolio/cpf-skills.vue'
 import compoInternship from '../components/collage-portfolio/cpf-internship.vue'
 import compoEthics from '../components/collage-portfolio/cpf-ethics.vue'
 import compoProjects from '../components/collage-portfolio/cpf-projects.vue'
+import compoConclusion from '../components/collage-portfolio/cpf-conclusion.vue'
+import compoLinks from '../components/collage-portfolio/cpf-links.vue'
+import compoReference from '../components/collage-portfolio/cpf-reference.vue'
 </script>
 
 <template>
@@ -14,7 +17,7 @@ import compoProjects from '../components/collage-portfolio/cpf-projects.vue'
     <div class="structured-notepad-top"><h1>Made In Puerto Rico</h1></div>
     <main>
       <div class="structured-notepad-bottom">
-        <h1>Portfolio for class COMP 4910</h1>
+        <h1 id="start">Portfolio for class COMP 4910</h1>
         <compoStart></compoStart>
         <div className="portfoliocollage-flight-ticket">
           <img
@@ -23,23 +26,32 @@ import compoProjects from '../components/collage-portfolio/cpf-projects.vue'
         />
         </div>
         <hr>
-        <h1>Portfolio Objectives</h1>
+        <h1 id="conclusion">Portfolio Objectives</h1>
         <compoObjective></compoObjective>
         <hr>
-        <h1>Biography (About Me)</h1>
+        <h1 id="biography">Biography (About Me)</h1>
         <compoBio></compoBio>
         <hr>
-        <h1>Skills</h1>
+        <h1 id="skills">Skills</h1>
         <compoSkills></compoSkills>
         <hr>
-        <h1>Internship Projects</h1>
+        <h1 id="internship">Internship Projects</h1>
         <compoInternship></compoInternship>
         <hr>
-        <h1>Ethics in the workspace</h1>
+        <h1 id="ethics">Ethics in the workspace</h1>
         <compoEthics></compoEthics>
         <hr>
-        <h1>Projects</h1>
+        <h1 id="projects">Projects</h1>
         <compoProjects></compoProjects>
+        <hr>
+        <h1 id="conclusion">Conclusion</h1>
+        <compoConclusion></compoConclusion>
+        <hr>
+        <h1 id="links">Links</h1>
+        <compoLinks></compoLinks>
+        <hr>
+        <h1 id="references">References</h1>
+        <compoReference></compoReference>
       </div>
     </main>
   </div>
@@ -89,12 +101,15 @@ import compoProjects from '../components/collage-portfolio/cpf-projects.vue'
 
 hr {
   width: 90%;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 
 h1 {
   display: flex;
   justify-content: center;
   font-size: 4.0vh;
+  margin-bottom: 3vh;
 }
 
 

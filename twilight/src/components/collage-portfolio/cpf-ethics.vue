@@ -1,5 +1,5 @@
 <template>
-  <section id="ethics">
+  <section>
     <h2>Did this program do anything to change your understanding of the importance of professional or business ethics?</h2>
     <p><i>¿Este programa hizo cualquier cosa para cambiar su comprensión de la importancia de la ética de profesión o de la empresa?</i></p>
     <p>The internship did reinforced my, already high, importance of professional and business ethics within the workplace. I've seen how it's crucial to maintaining trust, accountability, and just simply professionalism.</p>

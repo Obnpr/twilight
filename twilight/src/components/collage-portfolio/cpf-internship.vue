@@ -1,5 +1,5 @@
 <template>
-  <section id="internship" class="structured">
+  <section class="structured">
     <h3>Escuelita, a product production tour video.</h3>
     <p>The 'escuelita' is an tour of the company's main products lens. Shown process from it's raw material used, to the end packaged product. It was mostly explained with an old video recorded in the early 2000s.</p>
     <h4>Objective</h4>
@@ -74,6 +74,7 @@
       <p>iPhone 17 Pro</p>
     </div>
   </div>
+  <hr>
 
   <h4>Reflection</h4>
   <p>It was a very interesting experience. Due to being both the first project, and first time working with a company. This also provided much learning experience when it comes to: editing process, keyframing, scripting, production, file type, and many more aspects.</p>

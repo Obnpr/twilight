@@ -1,5 +1,5 @@
 <template>
-  <section id="projects" class="structure">
+  <section class="structure">
     <h2 id="favorite-projects" class="structureTitle">Favorite Projects</h2>
     <div class="showcaseDiv">
       <div class="showcaseRow">
