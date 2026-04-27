@@ -1,36 +1,31 @@
-<script setup lang="ts">
-
-
-</script>
-
 <template>
-  <div className="item-alignment">
+  <section className="item-alignment">
     <div>
       <li>
-        <h3>Obed Negrón Bodón</h3>
-        <h3>P00589029</h3>
+        <h1>Obed Negrón Bodón</h1>
+        <h2>P00589029</h2>
         <h3>COMP4910 PRACTICUM & PROF ETHICS</h3>
-        <h3>Prof. Raquel Lugo Vecchini</h3>
+        <h4>Prof. Raquel Lugo Vecchini</h4>
       </li>
+    <hr></hr>
       <li>
-        <br></br>
         <div className="portfoliocollage-dateformat">
-        <h2>Creation Date: 30/8/2025</h2>
+        <p>Creation Date: 30/8/2025</p>
         </div>
-        <h2>Last Modified: 24/4/2026</h2>
-        <a><em><p>date/month/year</p></em></a>
+        <p>Last Modified: 26/4/2026</p>
+        <em><p>date/month/year</p></em>
       </li>
     </div>
-    <div className="front-signature-imgdiv">
-      <div>
+
+    <div>
+      <figure>
           <img
-            src="../assets/portfolio/example-image.webp"
+            src="/src/assets/collageProject/start/prPostage.webp"
             alt="Puerto Rico postage stamp"
           />
-      </div>
+      </figure>
     </div>
-  </div>
-
+  </section>
 </template>
 
 <style scoped>
@@ -38,7 +33,45 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+}
 
+div {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.5vh;
+  margin: 0%;
+}
+
+h2, h3, h4, p {
+  font-size: 2.5vh;
+  margin: 0vh;
+  margin-bottom: 20px;
+}
+
+hr {
+  width: 100%;
+}
+
+em p {
+  font-size: 2.1vh;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  margin-left: 20px;
+}
+
+img {
+  height: 15vh;
 }
 </style>
 
