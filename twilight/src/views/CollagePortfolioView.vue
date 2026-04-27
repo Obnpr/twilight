@@ -5,6 +5,7 @@ import compoBio from '../components/collage-portfolio/cpf-bio.vue'
 import compoSkills from '../components/collage-portfolio/cpf-skills.vue'
 import compoInternship from '../components/collage-portfolio/cpf-internship.vue'
 import compoEthics from '../components/collage-portfolio/cpf-ethics.vue'
+import compoProjects from '../components/collage-portfolio/cpf-projects.vue'
 </script>
 
 <template>
@@ -36,6 +37,9 @@ import compoEthics from '../components/collage-portfolio/cpf-ethics.vue'
         <hr>
         <h1>Ethics in the workspace</h1>
         <compoEthics></compoEthics>
+        <hr>
+        <h1>Projects</h1>
+        <compoProjects></compoProjects>
       </div>
     </main>
   </div>
