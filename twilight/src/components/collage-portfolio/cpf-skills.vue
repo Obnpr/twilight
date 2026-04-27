@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <section id="portfolio-objective" class="structured">
+  <section id="skills" class="structured">
     <div>
       <figure>
         <img

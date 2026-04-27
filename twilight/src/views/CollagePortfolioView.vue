@@ -3,6 +3,7 @@ import compoStart from '../components/collage-portfolio/cpf-start.vue'
 import compoObjective from '../components/collage-portfolio/cpf-objective.vue'
 import compoBio from '../components/collage-portfolio/cpf-bio.vue'
 import compoSkills from '../components/collage-portfolio/cpf-skills.vue'
+import compoInternship from '../components/collage-portfolio/cpf-internship.vue'
 
 </script>
 
@@ -12,32 +13,26 @@ import compoSkills from '../components/collage-portfolio/cpf-skills.vue'
     <div class="structured-notepad-top"><h1>Made In Puerto Rico</h1></div>
     <main>
       <div class="structured-notepad-bottom">
-        <div>
-          <h1>Portfolio for class COMP 4910</h1>
-          <compoStart></compoStart>
-        </div>
-
+        <h1>Portfolio for class COMP 4910</h1>
+        <compoStart></compoStart>
         <div className="portfoliocollage-flight-ticket">
           <img
             src="/src/assets/collageProject/start/prFlighttTicket.webp"
             alt="Puerto Rico flight itelirary"
-          />
+        />
         </div>
         <hr>
-        <div>
-          <h1>Portfolio Objectives</h1>
-          <compoObjective></compoObjective>
-        </div>
+        <h1>Portfolio Objectives</h1>
+        <compoObjective></compoObjective>
         <hr>
-        <div>
-          <h1>Biography (About Me)</h1>
-          <compoBio></compoBio>
-        </div>
+        <h1>Biography (About Me)</h1>
+        <compoBio></compoBio>
         <hr>
-        <div>
-          <h1>Skills</h1>
-          <compoSkills></compoSkills>
-        </div>
+        <h1>Skills</h1>
+        <compoSkills></compoSkills>
+        <hr>
+        <h1>Internship Projects</h1>
+        <compoInternship></compoInternship>
       </div>
     </main>
   </div>
