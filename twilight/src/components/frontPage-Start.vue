@@ -1,14 +1,14 @@
 <template>
     <main>
-        <article> 
+        <article>
             <div>
                 <h1>I'm Obed Negrón.</h1>
-                <h2>Multimedia Producer, video-game developer, Front-End enthusiast.</h2>
-                <p>Undergraduate student with a knowledge of on multimedia production, PC hardware, video game development, and a bit of front-end dev. Experienced in Linux systems like Debian and Arch.</p>
+                <h2>Video Editor, video-game developer, front-end developer.</h2>
+                <p>Undergraduate cs student with a knowledge of on video editing, PC hardware, video game development, and a bit of front-end dev. Experienced on Linux systems, Debian and Arch based.</p>
             </div>
             <div class="photo-container" >
                 <figure>
-                    <img 
+                    <img
                     src="../assets/pictures/profile-icon-1.jpg"
                     alt="A picture of Obed Negron"
                     />

@@ -4,7 +4,7 @@
   import viewHeader from './views/HeaderView.vue'
   import viewFooter from './views/FooterView.vue'
   const isMenuVisible = ref(true)
-  /*const isMenuOpen = ref(false)*/
+  const unfinishedhide = ref(true)
 
 </script>
 
@@ -15,9 +15,13 @@
         <div v-if="isMenuVisible" class="header-nav">
           <nav>
             <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/collage-portfolio">Collage Portfolio</RouterLink>
-            <RouterLink to="/portfolio">Portfolio</RouterLink>
-            <RouterLink to="/backlog"> Game Backlog</RouterLink>
+            <RouterLink to="/aboutme">About</RouterLink>
+            <RouterLink to="/now">Now</RouterLink>
+            <RouterLink to="/contactme">Contact</RouterLink>
+            <RouterLink to="/collageportfolio">Collage Portfolio</RouterLink>
+            <RouterLink to="/portfolio" v-if="!unfinishedhidea">Portfolio</RouterLink>
+            <RouterLink to="/backlog">Gamelog</RouterLink>
+            <a>Theme</a>
           </nav>
         </div>
     </div>
@@ -78,23 +82,29 @@ footer {
   min-width: 80%;
 }
 
+.header-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .header-nav nav {
   display: flex;
   justify-content: center;
-  width: 70vh;
-  font-size: 2rem;
-  min-height: 5vh;
+  width: 95vh;
+  height: 5.5vh;
   gap: 1vh;
 }
 
 .header-nav a {
-  max-width: 26vh;
-  min-height: 5.5vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  background: #eff0d1;
+  color: white;
+  text-decoration: underline;
   border-radius: 7px 7px 7px 7px;
   padding: 0.4rem;
+  font-size: 1.8rem;
 }
 
 .content-container-mother {

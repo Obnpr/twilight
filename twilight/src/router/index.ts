@@ -29,8 +29,8 @@ const router = createRouter({
       component: BacklogView,
     },
     {
-      path: '/collage-portfolio',
-      name: 'collage-portfolio',
+      path: '/collageportfolio',
+      name: 'collageportfolio',
       component: CollagePortfolioView,
     },
   ],
