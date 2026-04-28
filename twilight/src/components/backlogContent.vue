@@ -10,14 +10,14 @@ import compoGameReview from '../components/gamelogMD/gameReview.md';
         <h1>Segments</h1>
         <div class="segments-button-alignment">
           <a class="segments-button">Reviews</a>
-          <a class="segments-button">Backlog</a>
+          <a class="segments-button">Gamelog</a>
         </div>
       </div>
       <div>
-        <h1>Reviews</h1>
+        <h1 id="reviews">Reviews</h1>
         <compoGameReview></compoGameReview>
         <hr>
-        <h1>Backlog</h1>
+        <h1 id="gamelog">Gamelog</h1>
         <compoGameList></compoGameList>
       </div>
     </div>

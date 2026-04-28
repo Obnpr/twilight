@@ -7,9 +7,9 @@
 
 <template>
   <title>Obed Negrón | Home</title>
-  <div class="structured-notepad" >
+  <div class="structured-notepad">
     <div class="structured-notepad-top"><h1>Made In Puerto Rico</h1></div>
-    <main class="structured-notepad-bottom" >
+    <main class="structured-notepad-bottom">
       <div>
         <compoStart></compoStart>
         <hr>
@@ -31,10 +31,8 @@
 }
 
 .structured-notepad-top {
-  height: 10vh;
-  width: 100vh;
-  min-width: 40vh;
-  max-width: 150vh;
+  height: 8vh;
+  width: 53%;
   background: linear-gradient(to bottom, #7b5749 10%, #3c2823 100%);
   border-radius: 16px 16px 0px 0px;
   color: #b17b66;
@@ -50,14 +48,11 @@
 }
 
 .structured-notepad-bottom {
+  height: auto;
+  width: 53%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.structured-notepad-bottom div {
-  min-width: 40vh;
-  max-width: 100vh;
   background-color: #eff0d1;
   border-radius: 0px 0px 2px 2px;
   grid-template-columns: 1fr;
@@ -68,22 +63,46 @@
   list-style-type: none;
 }
 
+.structured-notepad-bottom div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+@media (max-width: 1420px) {
+.structured-notepad-top {
+  width: 80%;
+}
+.structured-notepad-bottom {
+  width: 80%;
+  height: auto;
+  padding: 25px;
+}
+}
+
+@media (max-width: 880px) {
+.structured-notepad-top {
+  width: 90%;
+}
+.structured-notepad-bottom {
+  width: 90%;
+  height: auto;
+}
+}
+
 @media (max-width: 500px) {
 .structured-notepad-top {
-  height: 10vh;
-  width: 100vh;
-  min-width: 30vh;
-  max-width: 40vh;
+  width: 90%;
 }
 
 .structured-notepad-top h1 {
-  font-size: 1rem;
+  font-size: 100%;
 }
 
-.structured-notepad-bottom div {
-  width: 40vh;
-  min-width: 30vh;
-  max-width: 40vh;
+.structured-notepad-bottom {
+  width: 90%;
 }
 
 }

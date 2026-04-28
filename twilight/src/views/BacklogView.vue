@@ -26,7 +26,7 @@ main {
 }
 
 .notebook-loops {
-  width: 85vh;
+  width: 50%;
   height: 10vh;
 }
 
@@ -36,8 +36,7 @@ main {
 }
 
 .notebook-content {
-  width: 85vh;
-  min-height: 80vh;
+  width: 50%;
   background-color: #fef4ea;
   background-size: cover;
   background-position: center;

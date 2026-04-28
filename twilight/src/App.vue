@@ -47,51 +47,34 @@ html, body {
 
 <style scoped>
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.5vh;
-  height: 25vh;
-  min-height: 20vh;
-  max-height: 25vh;
+  height: 100%;
   width: 100%;
-  min-width: 80%;
-  max-width: 100%;
   background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.634));
 }
 
-footer {
-  display: flex;
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.634));
-  text-align: center;
-  height: 25vh;
-  min-height: 20vh;
-  max-height: 25vh;
-  width: 100%;
-  min-width: 80%;
-  max-width: 100%;
-  color: white;
-}
-
 .header-sort {
+  height: 100%;
+  width: 100%;
+  padding: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.6rem;
   flex-direction: column;
-  min-width: 80%;
 }
 
 .header-nav {
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 100%;
+  margin-top: 1vh;
 }
 
 .header-nav nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  width: 95vh;
+  width: 70%;
   height: 5.5vh;
   gap: 1vh;
 }
@@ -107,14 +90,27 @@ footer {
   font-size: 1.8rem;
 }
 
+footer {
+  display: flex;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.634));
+  text-align: center;
+  height: 25vh;
+  min-height: 20vh;
+  max-height: 25vh;
+  width: 100%;
+  min-width: 80%;
+  max-width: 100%;
+  color: white;
+}
+
 .content-container-mother {
-  min-width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.content-container-child {
+.content-container-child {  /* not being used, ATM */
   /* #fcf79b more yellow */
+  width: 100%;
   background-color: #eff0d1;
   grid-template-columns: 1fr;
   gap: 0px;
@@ -130,41 +126,64 @@ a:hover {
 }
 }
 
+@media (max-width: 1420px) {
+header {
+  height: 30vh;
+}
+}
+
+@media (max-width: 880px) {
+header {
+  height: 35vh;
+}
+}
+
+@media (max-width: 580px) {
+header {
+  height: 40vh;
+}
+}
+
 @media (max-width: 500px) {
 header {
-  min-height: 33vh;
-  min-width: 100%;
+  height: 30vh;
+  width: 100%;
 }
 
 .header-sort {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.6rem;
   flex-direction: column;
-  min-width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .header-logo {
-  min-width: 100%;
+  height: 10vh;
+  width: 100%;
 }
 
 .header-nav {
-  min-height: 18vh;
+  height: 100%;
+
 }
 
 .header-nav nav {
-  width: 95%;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
   flex-wrap: wrap;
   font-size: 2rem;
+  gap: 0px;
 }
 
 .header-nav a {
   display: flex;
-  align-items: center;
-  max-width: 26vh;
-  min-height: 5.5vh;
-  font-size: 1.3rem;
+  width: 11vh;
+  height: auto;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 }
