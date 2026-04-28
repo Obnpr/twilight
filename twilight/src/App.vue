@@ -132,22 +132,29 @@ a:hover {
 
 @media (max-width: 500px) {
 header {
-  height: 30vh;
-  min-height: 15vh;
-  max-height: 30vh;
-  width: 100%;
+  min-height: 33vh;
+  min-width: 100%;
+}
+
+.header-sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  flex-direction: column;
+  min-width: 100%;
+}
+
+.header-logo {
   min-width: 100%;
 }
 
 .header-nav {
-  min-height: 8.7vh;
-  font-size: 1.6rem;
-
+  min-height: 18vh;
 }
 
 .header-nav nav {
-
-  width: 40vh;
+  width: 95%;
   flex-wrap: wrap;
   font-size: 2rem;
 }
@@ -157,6 +164,7 @@ header {
   align-items: center;
   max-width: 26vh;
   min-height: 5.5vh;
+  font-size: 1.3rem;
 }
 
 }

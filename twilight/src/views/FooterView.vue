@@ -15,19 +15,19 @@ const currentYear = computed(() => new Date().getFullYear())
 
 
 <style scoped>
-  div {
-    display: flex;
-    justify-content: center;
-    color: white;
-    align-items: center;
-    width: 100%;
-  }
+div {
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  width: 100%;
+}
 
-  div a {
-    color: inherit;
-    text-decoration: none;
-    font-size: 1.8vh;
-  }
+div a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.8vh;
+}
 
 @media (max-width: 500px) {
 div {

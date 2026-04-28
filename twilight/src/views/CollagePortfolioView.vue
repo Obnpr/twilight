@@ -73,6 +73,11 @@ import compoReference from '../components/collage-portfolio/cpf-reference.vue'
   border-radius: 16px 16px 0px 0px;
   color: #b17b66;
   font-family: 'Courier New', Courier, monospace;
+}
+
+.structured-notepad-top h1 {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,8 +90,6 @@ import compoReference from '../components/collage-portfolio/cpf-reference.vue'
 
 .structured-notepad-bottom {
   width: 100vh;
-  min-width: 40vh;
-  max-width: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #eff0d1;
@@ -115,8 +118,6 @@ h1 {
 
 @media (max-width: 500px) {
 .structured-notepad-top {
-  height: 10vh;
-  width: 100vh;
   min-width: 30vh;
   max-width: 40vh;
 }
@@ -130,5 +131,11 @@ h1 {
   min-width: 30vh;
   max-width: 40vh;
 }
+
+.structured-notepad-bottom {
+  min-width: 30vh;
+  max-width: 40vh;
+}
+
 }
 </style>
