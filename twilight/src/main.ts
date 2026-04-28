@@ -1,5 +1,5 @@
 import './assets/main.css'
-import '/firebase-auth.ts'
+//import '/firebase-auth.ts'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
