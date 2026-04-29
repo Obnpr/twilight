@@ -4,6 +4,7 @@ import PortfolioView from '../views/portfolioView.vue'
 import gamelogView from '../views/gamelogView.vue'
 import collagePortfolioView from '../views/collagePortfolioView.vue'
 import aboutmeView from '../views/aboutMeView.vue'
+import nowView from '../views/nowView.vue'
 
 
 const router = createRouter({
@@ -23,6 +24,11 @@ const router = createRouter({
       path: '/portfolio',
       name: 'portfolio',
       component: PortfolioView,
+    },
+    {
+      path: '/now',
+      name: 'now',
+      component: nowView,
     },
     {
       path: '/gamelog',

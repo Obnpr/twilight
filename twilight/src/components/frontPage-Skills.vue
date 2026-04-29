@@ -25,7 +25,7 @@
                         alt="Film icon for Video Editing."
                     />
                 </figure>
-                <p>Multimedia Producer</p>
+                <p>Video Editor</p>
             </div>
             <div>
                 <figure>
@@ -128,7 +128,7 @@
     </article>
     </Transition>
     <Transition name="slide">
-        <h2 v-if="isMoreSkillsOpen">Additional skills</h2>    
+        <h2 v-if="isMoreSkillsOpen">Additional skills</h2>
     </Transition>
     <Transition name="slide">
         <article class="container-formating" v-if="isMoreSkillsOpen" >
@@ -243,9 +243,7 @@ div {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2vh;
-  margin-left: 3vh;
-  margin-right: 3vh;
-  margin-top: 1.5vh;
+  padding: 2vh;
 }
 
 article {
@@ -281,15 +279,10 @@ figure {
 
 
 .more-button {
-    margin-top: 3vh;
-    margin-bottom: 1.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 100%;
-    margin-left: 0vh;
-    margin-right: 0vh;
 }
 
 .more-button a {
@@ -297,7 +290,8 @@ figure {
 }
 
 .more-button img {
-    height: 7vh;
+  height: 7vh;
+  width: 100%;
 }
 
 .more-button p {
@@ -329,7 +323,7 @@ div {
 }
 
 article {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 0vh;
 }
 

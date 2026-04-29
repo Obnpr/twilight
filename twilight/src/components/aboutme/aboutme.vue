@@ -9,7 +9,7 @@
         <div class="about-photo-container">
             <figure>
                 <img
-                src="../assets/pictures/profile-icon-2.png"
+                src="/src/assets/pictures/profile-icon-2.png"
                 alt="A picture of Obed Negron"
                 />
             </figure>
