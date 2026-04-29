@@ -70,15 +70,35 @@ import compoGameReview from '/src/components/gamelog/gamereview.md';
 .markdown-body :deep(th),
 .markdown-body :deep(td) {
   border: 1.5px solid black;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.3rem;
   text-align: left;
 }
 .markdown-body :deep(th) {
   background-color: #eff0d1;
   font-weight: bold;
+  width: 100%;
 }
+
 .markdown-body :deep(tr:nth-child(even)) {
   background-color: #eff0d1;
 }
 
+@media (max-width: 880px) {
+.markdown-body :deep(table) {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.5rem;
+}
+.markdown-body :deep(th),
+.markdown-body :deep(td) {
+  border: 1.5px solid black;
+  padding: 0.3rem 0.3rem;
+  text-align: left;
+}
+.markdown-body :deep(th) {
+  background-color: #eff0d1;
+  font-weight: bold;
+  width: 30%;
+}
+}
 </style>

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import compoGameList from '../components/gamelog/gamelogContent.vue'
 </script>
 
@@ -44,6 +44,17 @@ main {
   gap: 0px;
   color: black;
   padding: 30px;
+}
+
+@media (max-width: 880px) {
+.notebook-loops {
+  width: 90%;
+}
+
+.notebook-content {
+  width: 90%;
+  padding: 20px;
+}
 }
 
 </style>
