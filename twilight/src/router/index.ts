@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import PortfolioView from '../views/PortfolioView.vue'
-import BacklogView from '../views/BacklogView.vue'
-import CollagePortfolioView from '../views/CollagePortfolioView.vue'
+import HomeView from '../views/homeView.vue'
+import PortfolioView from '../views/portfolioView.vue'
+import gamelogView from '../views/gamelogView.vue'
+import collagePortfolioView from '../views/collagePortfolioView.vue'
+import aboutmeView from '../views/aboutMeView.vue'
 
 
 const router = createRouter({
@@ -24,14 +25,19 @@ const router = createRouter({
       component: PortfolioView,
     },
     {
-      path: '/backlog',
-      name: 'backlog',
-      component: BacklogView,
+      path: '/gamelog',
+      name: 'gamelog',
+      component: gamelogView,
     },
     {
       path: '/collageportfolio',
       name: 'collageportfolio',
-      component: CollagePortfolioView,
+      component: collagePortfolioView,
+    },
+    {
+      path: '/aboutme',
+      name: 'aboutme',
+      component: aboutmeView,
     },
   ],
 })

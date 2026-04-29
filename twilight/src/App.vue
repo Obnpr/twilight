@@ -20,7 +20,7 @@
             <RouterLink to="/contactme">Contact</RouterLink>
             <RouterLink to="/collageportfolio">Collage Portfolio</RouterLink>
             <RouterLink to="/portfolio" v-if="!unfinishedhidea">Portfolio</RouterLink>
-            <RouterLink to="/backlog">Gamelog</RouterLink>
+            <RouterLink to="/gamelog">Gamelog</RouterLink>
             <a>Theme</a>
           </nav>
         </div>

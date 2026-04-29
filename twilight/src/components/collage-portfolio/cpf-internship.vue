@@ -18,12 +18,6 @@
           alt="An example flowchart of possible routes for the 'escuelita'."
         />
       </figure>
-      <figure>
-        <img
-          src="/src/assets/collageProject/internship/escuelita/escuelita-example-1.webp"
-          alt="An example flowchart of possible routes for the 'escuelita'."
-        />
-      </figure>
     </div>
 
   <h5>Equipment/Software used</h5>
