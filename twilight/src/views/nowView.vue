@@ -86,5 +86,36 @@
     linear-gradient(to bottom, #7b5749, #3c2823) border-box;
 }
 
+@media (max-width: 880px) {
+
+}
+
+@media (max-width: 580px) {
+
+}
+
+@media (max-width: 500px) {
+.structureMiddle {
+  width: 1%;
+}
+
+.structureMiddle h1 {
+  opacity: 0%;
+}
+
+.structureLeft {
+  width: 45%;
+  border: 3px solid transparent;
+  border-radius: 5px 0px 5px 0px;
+}
+
+.structureRight {
+  width: 45%;
+  border: 3px solid transparent;
+  border-radius: 5px 0px 5px 0px;
+}
+
+}
+
 
 </style>
