@@ -76,7 +76,6 @@ import compoGameReview from '/src/components/gamelog/gamereview.md';
 .markdown-body :deep(th) {
   background-color: #eff0d1;
   font-weight: bold;
-  width: 100%;
 }
 
 .markdown-body :deep(tr:nth-child(even)) {
@@ -98,7 +97,6 @@ import compoGameReview from '/src/components/gamelog/gamereview.md';
 .markdown-body :deep(th) {
   background-color: #eff0d1;
   font-weight: bold;
-  width: 30%;
 }
 }
 </style>

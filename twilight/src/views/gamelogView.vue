@@ -40,7 +40,7 @@ main {
   background-color: #fef4ea;
   background-size: cover;
   background-position: center;
-  border-radius: 2px 2px 2px 2px;
+  border-radius: 0px 0px 2px 2px;
   gap: 0px;
   color: black;
   padding: 30px;

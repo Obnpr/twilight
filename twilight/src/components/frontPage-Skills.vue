@@ -246,14 +246,18 @@ div {
   padding: 2vh;
 }
 
+div, div {
+  wid
+}
+
 article {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 3vh;
 }
 
 img {
   object-fit: contain;
-  max-height: 8vh;
+  height: 8vh;
 }
 
 h1 {
@@ -269,12 +273,22 @@ h2 {
 p {
   font-size: 2.6vh;
   margin-left: 1.5vh;
-  height: 100%;
+  margin: 0%;
+  width: 10vh;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
 }
 
 figure {
   margin: 0%;
-  max-height: 10vh;
+  width: 10vh;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -316,10 +330,6 @@ div {
     justify-content: start;
     flex-wrap: wrap;
     gap: 1vh;
-    margin-left: 0vh;
-    margin-right: 0vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
 }
 
 article {
@@ -328,8 +338,8 @@ article {
 }
 
 img {
-    object-fit: contain;
-    max-height: 6vh;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -351,12 +361,11 @@ p {
 }
 
 figure {
-    max-height: 10vh;
     margin-right: 2vh;
 }
 
 .container-formating div {
-    width: 30vh;
+  width: 30vh;
 }
 
 }
