@@ -77,6 +77,7 @@
 
 <style scoped>
 .structured {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -85,14 +86,9 @@
   display: flex;
 }
 
-.documentation-row h4 {
-  width: 15vh;
-  height: 3.5vh;
-}
-
 .documentation-row p {
-  height: 3.5vh;
-  width: 70vh;
+  height: 3.7vh;
+  width: 100%;
   font-size: 1.5vh;
   font-style: italic;
   display: flex;
@@ -160,6 +156,14 @@ figure {
 img {
   width: 35vh;
   height: 20vh;
+}
+
+@media (max-width: 800px) {
+.structured {
+
+}
+
+
 }
 
 </style>
