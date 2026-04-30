@@ -159,9 +159,6 @@ img {
 }
 
 @media (max-width: 800px) {
-.structured {
-
-}
 
 
 }
