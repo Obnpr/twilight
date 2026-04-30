@@ -20,7 +20,7 @@ import compoTable from '../components/collage-portfolio/cpf-table.vue'
         <h1>Made In Puerto Rico</h1>
       </div>
       <div class="structured-notepad-bottom">
-        <h1 id="frontpage">Portfolio for class COMP 4910</h1>
+        <h1 id="frontpage" class="topText">Portfolio for class COMP 4910</h1>
         <compoStart></compoStart>
         <hr>
         <compoTable></compoTable>
@@ -157,6 +157,10 @@ img {
   padding: 5px;
   padding-left: 10px;
   padding-right: 5px;
+}
+
+.topText {
+  text-align: center;
 }
 
 }
