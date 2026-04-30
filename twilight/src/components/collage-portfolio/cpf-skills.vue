@@ -165,4 +165,10 @@ h2 {
   margin-bottom: 0%;
   text-align: center;
 }
+
+@media (max-width: 800px) {
+section div {
+  width: 11vh;
+}
+}
 </style>
