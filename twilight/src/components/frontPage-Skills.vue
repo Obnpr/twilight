@@ -2,16 +2,6 @@
     import { ref } from 'vue'
     import buttonSrcDefault from '../assets/page-elements/moreButton.webp'
     import buttonSrcOpen from '../assets/page-elements/lessButton.webp'
-
-    const isMoreSkillsOpen = ref(false)
-    const moreButtonSrc = ref(buttonSrcDefault)
-    const moreButtonText = ref('View More')
-
-    function toggleMenu() {
-    isMoreSkillsOpen.value = !isMoreSkillsOpen.value
-    moreButtonSrc.value = isMoreSkillsOpen.value ? buttonSrcOpen : buttonSrcDefault
-    moreButtonText.value = isMoreSkillsOpen.value ? 'View Less' : 'View More'
-    }
 </script>
 
 <template>
@@ -30,20 +20,20 @@
           <div>
               <figure>
                   <img
-                      src="../assets/logo/C++.webp"
-                      alt="C++ Logo"
+                      src="../assets/logo/linuxtux.webp"
+                      alt="Linux Tux"
                   />
               </figure>
-              <p>Programmer</p>
+              <p>Linux</p>
           </div>
           <div>
               <figure>
                   <img
-                      src="../assets/logo/debianlinux.webp"
-                      alt="Debian Linux Logo"
+                      src="../assets/logo/personal/programing.webp"
+                      alt="Average Linux terminal default ' >_ '"
                   />
               </figure>
-              <p>Debian</p>
+              <p>Programer</p>
           </div>
           <div>
               <figure>
@@ -52,7 +42,7 @@
                       alt="Icon of a Processor"
                   />
               </figure>
-              <p>PC Hardware</p>
+              <p>PC <br>Hardware</p>
           </div>
           <div>
               <figure>
@@ -63,22 +53,28 @@
               </figure>
               <p>Docker</p>
           </div>
+          <div>
+              <figure>
+                  <img
+                      src="../assets/logo/personal/network.webp"
+                      alt="Docker Container Logo"
+                  />
+              </figure>
+              <p>Network</p>
+          </div>
         </div>
     </article>
-
-    <div class="more-button">
-        <a @click="toggleMenu">
-            <img class="more-button" type="image" :src="moreButtonSrc" alt="Expand button for more Skills" />
-            <p class="more-button">{{ moreButtonText }}</p>
-        </a>
-    </div>
-
-    <Transition name="slide">
-    <h2 v-if="isMoreSkillsOpen">Skills</h2>
-    </Transition>
-    <Transition name="slide">
-    <article v-if="isMoreSkillsOpen" class="containerFormating">
+    <article  class="containerFormating">
         <div>
+          <div>
+              <figure>
+                  <img
+                      src="../assets/logo/debianlinux.webp"
+                      alt="Debian Linux Logo"
+                  />
+              </figure>
+              <p>Debian</p>
+          </div>
             <div>
                 <figure>
                 <img
@@ -91,20 +87,20 @@
             <div>
                 <figure>
                 <img
-                    src="../assets/logo/Godot.webp"
-                    alt="Godot Engine Logo"
-                />
-                </figure>
-                <p>GDScript</p>
-            </div>
-            <div>
-                <figure>
-                <img
                     src="../assets/logo/vue.webp"
                     alt="Vue Logo"
                 />
                 </figure>
-                <p>Vue</p>
+                <p>VueJS</p>
+            </div>
+            <div>
+                <figure>
+                <img
+                    src="../assets/logo/dockercompose.webp"
+                    alt="Docker Compose Logo"
+                />
+                </figure>
+                <p>Docker <br>Compose</p>
             </div>
             <div>
                 <figure>
@@ -118,20 +114,16 @@
             <div>
                 <figure>
                 <img
-                    src="../assets/logo/dockercompose.webp"
-                    alt="Docker Compose Logo"
+                    src="../assets/logo/Godot.webp"
+                    alt="Godot Engine Logo"
                 />
                 </figure>
-                <p>Docker Compose</p>
+                <p>GDScript</p>
             </div>
         </div>
     </article>
-    </Transition>
-    <Transition name="slide">
-        <h2 v-if="isMoreSkillsOpen">Additional skills</h2>
-    </Transition>
-    <Transition name="slide">
-        <article class="containerFormating" v-if="isMoreSkillsOpen" >
+        <h2 >Additional skills</h2>
+        <article class="containerFormating"  >
             <div>
                 <div>
                     <figure>
@@ -162,24 +154,6 @@
                 </div>
                 <div>
                     <figure>
-                    <img
-                        src="../assets/logo/HTML5.webp"
-                        alt="HTML5 Logo"
-                    />
-                    </figure>
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <figure>
-                    <img
-                        src="../assets/logo/CSS3.webp"
-                        alt="CSS3 Logo"
-                    />
-                    </figure>
-                    <p>CSS</p>
-                </div>
-                <div>
-                    <figure>
                         <img
                             src="../assets/logo/CSharp.webp"
                             alt="C# Logo"
@@ -198,21 +172,17 @@
                 </div>
             </div>
         </article>
-    </Transition>
-    <Transition name="slide">
-    <h2 v-if="isMoreSkillsOpen">Personal toolkit</h2>
-    </Transition>
-    <Transition name="slide">
-        <article class="containerFormating" v-if="isMoreSkillsOpen">
+    <h2>Software toolkit</h2>
+        <article class="containerFormating" >
             <div>
                 <div>
                     <figure>
                         <img
-                            src="../assets/logo/shotcut.webp"
-                            alt="Shotcut Logo"
+                            src="../assets/logo/davinciresolve.webp"
+                            alt="Davinci Resolve logo"
                         />
                     </figure>
-                    <p>Shotcut</p>
+                    <p>Davinci<br>Resolve</p>
                 </div>
                 <div>
                     <figure>
@@ -234,7 +204,6 @@
                 </div>
             </div>
         </article>
-    </Transition>
 </template>
 
 <style scoped>
@@ -289,41 +258,8 @@ figure {
   align-items: center;
 }
 
-
-.more-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .container-formating {
   width: 50vh;
-}
-
-.more-button a {
-    cursor: pointer;
-}
-
-.more-button img {
-  height: 7vh;
-  width: 100%;
-}
-
-.more-button p {
-  width: 100%;
-  margin-left: 0rem;
-}
-
-.slide-enter-active,
-.slide-leave-active {
-  transition: all 0.3s ease;
-}
-
-.slide-enter-from,
-.slide-leave-to {
-  opacity: 0;
-  transform: translateY(-20px);
 }
 
 @media (max-width: 500px) {

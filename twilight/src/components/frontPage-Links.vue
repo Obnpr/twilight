@@ -57,9 +57,8 @@ a:hover {
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
 
 </style>

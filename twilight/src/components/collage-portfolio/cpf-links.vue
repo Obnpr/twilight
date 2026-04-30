@@ -102,6 +102,10 @@ input {
   height: 100%%;
 }
 
+input:hover {
+  transform: scale(1.06);
+}
+
 p {
   text-align: center;
   font-size: 2vh;

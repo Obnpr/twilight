@@ -9,8 +9,8 @@
             <div class="photo-container" >
                 <figure>
                     <img
-                    src="../assets/pictures/profile-icon-1.jpg"
-                    alt="A picture of Obed Negron"
+                    src="../assets/pictures/photo2.jpeg"
+                    alt="A picture of me, Obed Negron"
                     />
                 </figure>
             </div>
