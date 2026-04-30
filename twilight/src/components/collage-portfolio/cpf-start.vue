@@ -67,11 +67,26 @@ figure {
   width: 100%;
   height: 100%;
   margin: 0%;
-  margin-left: 20px;
+  padding-left: 20px;
 }
 
 img {
   height: 15vh;
+}
+
+@media (max-width: 800px) {
+figure {
+  padding-left: 0%;
+  padding: 5vh;
+}
+
+hr {
+  width: 90%;
+}
+
+.item-alignment {
+  flex-direction: column;
+}
 }
 </style>
 
