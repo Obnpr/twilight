@@ -385,4 +385,25 @@ a#disabled {
   cursor: not-allowed;
 }
 
+@media (max-width: 800px) {
+.contentStructure {
+  width: 100%;
+  height: 100%;
+}
+.contentStructure figure {
+  height: 100%;
+}
+
+.contentLogoNText figure {
+  width: 9vh;
+  height: 9vh;
+  margin: 0%;
+}
+
+.contentText {
+  min-height: 30vh;
+}
+
+}
+
 </style>
