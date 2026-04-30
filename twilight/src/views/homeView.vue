@@ -21,6 +21,10 @@
 </template>
 
 <style scoped>
+hr {
+  margin-top: 5vh;
+}
+
 .structured-notepad {
   display: flex;
   flex-direction: column;

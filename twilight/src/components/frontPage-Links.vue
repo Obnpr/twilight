@@ -1,6 +1,6 @@
 <template>
-    <h1>Links</h1>
     <div class="container-mother">
+      <h1>Links</h1>
         <div class="container-child">
             <figure>
                 <a href="/pdf/Resume-ObedNegron.pdf" target="_blank">
@@ -21,11 +21,13 @@
 </template>
 
 <style scoped>
+
 .container-mother {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .container-mother div {
     display: flex;
@@ -57,7 +59,7 @@ a:hover {
 h1 {
     display: flex;
     justify-content: center;
-    
+
 }
 
 </style>

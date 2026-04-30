@@ -242,12 +242,15 @@ div {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 2vh;
-  padding: 2vh;
+  gap: 1vh;
+  padding: 1.5vh;
 }
 
 article {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 3vh;
 }
 
@@ -270,8 +273,8 @@ p {
   font-size: 2.6vh;
   margin-left: 1.5vh;
   margin: 0%;
-  width: 20%;
-  height: 10vh;
+  width: 10vh;
+  height: 100%;
   display: flex;
   align-items: center;
   white-space: nowrap;
