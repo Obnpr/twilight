@@ -18,51 +18,51 @@
     <h1>Skill Overview</h1>
     <article>
         <div>
-            <div>
-                <figure>
-                    <img
-                        src="../assets/logo/multimediaProducer.webp"
-                        alt="Film icon for Video Editing."
-                    />
-                </figure>
-                <p>Video Editor</p>
-            </div>
-            <div>
-                <figure>
-                    <img
-                        src="../assets/logo/C++.webp"
-                        alt="C++ Logo"
-                    />
-                </figure>
-                <p>Programmer</p>
-            </div>
-            <div>
-                <figure>
-                    <img
-                        src="../assets/logo/debianlinux.webp"
-                        alt="Debian Linux Logo"
-                    />
-                </figure>
-                <p>Debian</p>
-            </div>
-            <div>
-                <figure>
-                    <img
-                        src="../assets/logo/processor.webp"
-                        alt="Icon of a Processor"
-                    />
-                </figure>
-                <p>PC Hardware</p>
-            </div>
-            <div>
-                <figure>
-                    <img
-                        src="../assets/logo/Docker.webp"
-                        alt="Docker Container Logo"
-                    />
-                </figure>
-                <p>Docker</p>
-            </div>
+          <div>
+              <figure>
+                  <img
+                      src="../assets/logo/multimediaProducer.webp"
+                      alt="Film icon for Video Editing."
+                  />
+              </figure>
+              <p>Video Editor</p>
+          </div>
+          <div>
+              <figure>
+                  <img
+                      src="../assets/logo/C++.webp"
+                      alt="C++ Logo"
+                  />
+              </figure>
+              <p>Programmer</p>
+          </div>
+          <div>
+              <figure>
+                  <img
+                      src="../assets/logo/debianlinux.webp"
+                      alt="Debian Linux Logo"
+                  />
+              </figure>
+              <p>Debian</p>
+          </div>
+          <div>
+              <figure>
+                  <img
+                      src="../assets/logo/processor.webp"
+                      alt="Icon of a Processor"
+                  />
+              </figure>
+              <p>PC Hardware</p>
+          </div>
+          <div>
+              <figure>
+                  <img
+                      src="../assets/logo/Docker.webp"
+                      alt="Docker Container Logo"
+                  />
+              </figure>
+              <p>Docker</p>
+          </div>
         </div>
     </article>
 
@@ -77,7 +77,7 @@
     <h2 v-if="isMoreSkillsOpen">Skills</h2>
     </Transition>
     <Transition name="slide">
-    <article v-if="isMoreSkillsOpen" class="container-formating-mobile">
+    <article v-if="isMoreSkillsOpen" class="containerFormating">
         <div>
             <div>
                 <figure>
@@ -131,7 +131,7 @@
         <h2 v-if="isMoreSkillsOpen">Additional skills</h2>
     </Transition>
     <Transition name="slide">
-        <article class="container-formating-mobile" v-if="isMoreSkillsOpen" >
+        <article class="containerFormating" v-if="isMoreSkillsOpen" >
             <div>
                 <div>
                     <figure>
@@ -158,7 +158,7 @@
                         alt="Ubiquiti Logo"
                     />
                     </figure>
-                    <p>Ubiquiti Products</p>
+                    <p>Ubiquiti</p>
                 </div>
                 <div>
                     <figure>
@@ -203,7 +203,7 @@
     <h2 v-if="isMoreSkillsOpen">Personal toolkit</h2>
     </Transition>
     <Transition name="slide">
-        <article class="container-formating-mobile" v-if="isMoreSkillsOpen">
+        <article class="containerFormating" v-if="isMoreSkillsOpen">
             <div>
                 <div>
                     <figure>
@@ -270,10 +270,9 @@ p {
   font-size: 2.6vh;
   margin-left: 1.5vh;
   margin: 0%;
-  width: 10vh;
+  width: 20%;
   height: 10vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   white-space: nowrap;
 }
@@ -309,8 +308,8 @@ figure {
 }
 
 .more-button p {
-    margin-top: 0.8rem;
-    margin-left: 0rem;
+  width: 100%;
+  margin-left: 0rem;
 }
 
 .slide-enter-active,
@@ -330,6 +329,8 @@ div {
     justify-content: start;
     flex-wrap: wrap;
     gap: 1vh;
+    height: 100%;
+    width: 100%;
 }
 
 article {
@@ -353,19 +354,19 @@ h2 {
 }
 
 p {
-    display: flex;
-    align-items: center;
-    font-size: 2.3vh;
-    margin: 0%;
-    height: 100%;
+  display: flex;
+  text-align: end;
+  font-size: 2.3vh;
+  margin: 0%;
+  width: 40%;
 }
 
 figure {
-    margin-right: 2vh;
+  margin-right: 2vh;
 }
 
-.container-formating-mobile {
-  width: 70vh;
+.containerFormating {
+  width: 100%;
 }
 
 }
