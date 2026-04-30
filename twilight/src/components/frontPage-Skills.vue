@@ -77,7 +77,7 @@
     <h2 v-if="isMoreSkillsOpen">Skills</h2>
     </Transition>
     <Transition name="slide">
-    <article v-if="isMoreSkillsOpen" class="container-formating">
+    <article v-if="isMoreSkillsOpen" class="container-formating-mobile">
         <div>
             <div>
                 <figure>
@@ -131,7 +131,7 @@
         <h2 v-if="isMoreSkillsOpen">Additional skills</h2>
     </Transition>
     <Transition name="slide">
-        <article class="container-formating" v-if="isMoreSkillsOpen" >
+        <article class="container-formating-mobile" v-if="isMoreSkillsOpen" >
             <div>
                 <div>
                     <figure>
@@ -203,7 +203,7 @@
     <h2 v-if="isMoreSkillsOpen">Personal toolkit</h2>
     </Transition>
     <Transition name="slide">
-        <article class="container-formating" v-if="isMoreSkillsOpen">
+        <article class="container-formating-mobile" v-if="isMoreSkillsOpen">
             <div>
                 <div>
                     <figure>
@@ -246,13 +246,9 @@ div {
   padding: 2vh;
 }
 
-div, div {
-  wid
-}
-
 article {
-    width: 100%;
-    margin-bottom: 3vh;
+  width: 100%;
+  margin-bottom: 3vh;
 }
 
 img {
@@ -297,6 +293,10 @@ figure {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.container-formating {
+  width: 50vh;
 }
 
 .more-button a {
@@ -364,8 +364,8 @@ figure {
     margin-right: 2vh;
 }
 
-.container-formating div {
-  width: 30vh;
+.container-formating-mobile {
+  width: 70vh;
 }
 
 }

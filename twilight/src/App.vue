@@ -21,7 +21,7 @@
             <RouterLink to="/collageportfolio">Collage Portfolio</RouterLink>
             <RouterLink to="/portfolio" v-if="!unfinishedhide">Portfolio</RouterLink>
             <RouterLink to="/gamelog">Gamelog</RouterLink>
-            <a>Theme</a>
+            <a v-if="!unfinishedhide">Theme</a>
           </nav>
         </div>
     </div>
@@ -33,17 +33,6 @@
     <viewFooter></viewFooter>
   </footer>
 </template>
-
-# AVOID USING STYLE w/o SCOPED, IF POSSIBLE
-<style>
-/* Mouse Related */
-html, body {
-  cursor:
-    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgba(0, 0, 0, 0.5)"><circle cx="12" cy="12" r="10" stroke="white" stroke-width="2" fill="white"/></svg>')
-      12 12,
-    auto !important;
-}
-</style>
 
 <style scoped>
 header {
