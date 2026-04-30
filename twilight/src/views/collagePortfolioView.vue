@@ -23,10 +23,10 @@ import compoTable from '../components/collage-portfolio/cpf-table.vue'
         <h1 id="frontpage">Portfolio for class COMP 4910</h1>
         <compoStart></compoStart>
         <hr>
+        <compoTable></compoTable>
+        <hr>
         <h1 id="objective">Portfolio Objectives</h1>
         <compoObjective></compoObjective>
-        <hr>
-        <compoTable></compoTable>
         <hr>
         <h1 id="links">Links</h1>
         <compoLinks></compoLinks>

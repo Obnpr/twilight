@@ -22,7 +22,7 @@
             <RouterLink to="/portfolio" v-if="!unfinishedhide">Portfolio</RouterLink>
             <RouterLink to="/gamelog">Gamelog</RouterLink>
             <a v-if="!unfinishedhide">Theme</a>
-            <RouterLink to="/changelog">Changelog</RouterLink>
+            <RouterLink to="/changelog" v-if="!unfinishedhide">Changelog</RouterLink>
           </nav>
         </div>
     </div>
