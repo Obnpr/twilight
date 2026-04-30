@@ -14,4 +14,12 @@ section {
   padding: 2vh;
 }
 
+@media (max-width: 800px) {
+section {
+  padding: 0vh;
+  min-height: 55vh;
+}
+
+}
+
 </style>
