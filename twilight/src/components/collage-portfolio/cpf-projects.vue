@@ -1,6 +1,6 @@
 <template>
   <section class="structure">
-    <h2 id="favorite-projects" class="structureTitle">Favorite Projects</h2>
+    <h2 id="favprojects" class="structureTitle">Favorite Projects</h2>
     <div class="showcaseDiv">
       <div class="showcaseRow">
         <div class="contentStructure">
@@ -98,7 +98,7 @@
         </div>
       </div>
     </div>
-    <h2 id="c++-projects" class="structureTitle">C++ Projects</h2>
+    <h2 id="c++projects" class="structureTitle">C++ Projects</h2>
     <div class="showcaseDiv">
       <div class="showcaseRow">
         <div class="contentStructure">
@@ -177,7 +177,7 @@
         </div>
       </div>
     </div>
-    <h2 id="web-projects" class="structureTitle">Web Projects</h2>
+    <h2 id="webprojects" class="structureTitle">Web Projects</h2>
     <div class="showcaseDiv">
       <div class="showcaseRow">
         <div class="contentStructure">

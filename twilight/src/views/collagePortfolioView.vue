@@ -9,25 +9,24 @@ import compoProjects from '../components/collage-portfolio/cpf-projects.vue'
 import compoConclusion from '../components/collage-portfolio/cpf-conclusion.vue'
 import compoLinks from '../components/collage-portfolio/cpf-links.vue'
 import compoReference from '../components/collage-portfolio/cpf-reference.vue'
+import compoTable from '../components/collage-portfolio/cpf-table.vue'
 </script>
 
 <template>
   <title>Obed Negrón | Collage Portfolio</title>
   <div class="structured-notepad">
     <main>
-      <div class="structured-notepad-top"><h1>Made In Puerto Rico</h1></div>
+      <div class="structured-notepad-top">
+        <h1>Made In Puerto Rico</h1>
+      </div>
       <div class="structured-notepad-bottom">
-        <h1 id="start">Portfolio for class COMP 4910</h1>
+        <h1 id="frontpage">Portfolio for class COMP 4910</h1>
         <compoStart></compoStart>
-        <div className="portfoliocollage-flight-ticket">
-          <img
-            src="/src/assets/collageProject/start/prFlighttTicket.webp"
-            alt="Puerto Rico flight itelirary"
-        />
-        </div>
         <hr>
         <h1 id="objective">Portfolio Objectives</h1>
         <compoObjective></compoObjective>
+        <hr>
+        <compoTable></compoTable>
         <hr>
         <h1 id="links">Links</h1>
         <compoLinks></compoLinks>
@@ -37,14 +36,19 @@ import compoReference from '../components/collage-portfolio/cpf-reference.vue'
         <hr>
         <h1 id="skills">Skills</h1>
         <compoSkills></compoSkills>
-        <hr>
+        <div className="portfoliocollage-flight-ticket">
+          <img
+            src="/src/assets/collageProject/start/prFlighttTicket.webp"
+            alt="Puerto Rico flight itelirary"
+          />
+        </div>
         <h1 id="internship">Internship Projects</h1>
         <compoInternship></compoInternship>
         <hr>
         <h1 id="ethics">Ethics in the workspace</h1>
         <compoEthics></compoEthics>
         <hr>
-        <h1 id="projects">Projects</h1>
+        <h1>Projects</h1>
         <compoProjects></compoProjects>
         <hr>
         <h1 id="conclusion">Conclusion</h1>
@@ -121,6 +125,11 @@ h1 {
   justify-content: center;
   font-size: 4.0vh;
   margin-bottom: 3vh;
+}
+
+img {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 
