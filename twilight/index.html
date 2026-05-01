@@ -10,3 +10,11 @@
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
+
+<script>
+  const redirect = sessionStorage.getItem('redirect');
+  if (redirect) {
+    sessionStorage.removeItem('redirect');
+    history.replaceState(null, '', redirect);
+  }
+</script>
