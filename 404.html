@@ -2,7 +2,8 @@
 <html>
   <head>
     <script>
-      window.location.replace('/' + window.location.pathname.slice(1));
+      sessionStorage.setItem('redirect', location.pathname);
+      location.replace('/');
     </script>
   </head>
 </html>
