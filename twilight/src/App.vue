@@ -16,7 +16,7 @@
           <nav>
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="/aboutme">About</RouterLink>
-            <RouterLink to="/now">Now</RouterLink>
+            <RouterLink to="/now" v-if="!unfinishedhide">Now</RouterLink>
             <RouterLink to="/contactme" v-if="!unfinishedhide">Contact</RouterLink>
             <RouterLink to="/collageportfolio">Collage Portfolio</RouterLink>
             <RouterLink to="/portfolio" v-if="!unfinishedhide">Portfolio</RouterLink>
