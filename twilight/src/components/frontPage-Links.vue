@@ -1,9 +1,9 @@
 <template>
-    <h1>Links</h1>
     <div class="container-mother">
+      <h1>Links</h1>
         <div class="container-child">
             <figure>
-                <a href="/pdf/Resume-ObedNegron.pdf" target="_blank">
+                <a href="/pdf/resumeobednegron.pdf" target="_blank">
                 <img type="image" src="../assets/logo/resume.webp" alt="Resume Icon" />
                 </a>
             </figure>
@@ -21,11 +21,13 @@
 </template>
 
 <style scoped>
+
 .container-mother {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .container-mother div {
     display: flex;
@@ -55,9 +57,8 @@ a:hover {
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-    
+  display: flex;
+  justify-content: center;
 }
 
 </style>

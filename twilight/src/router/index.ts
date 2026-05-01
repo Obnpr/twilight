@@ -1,6 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import BacklogView from '../views/BacklogView.vue'
+import HomeView from '../views/homeView.vue'
+import PortfolioView from '../views/portfolioView.vue'
+import gamelogView from '../views/gamelogView.vue'
+import collagePortfolioView from '../views/collagePortfolioView.vue'
+import aboutmeView from '../views/aboutMeView.vue'
+import nowView from '../views/nowView.vue'
+import changelogView from '../views/changelogView.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,15 +24,32 @@ const router = createRouter({
     {
       path: '/portfolio',
       name: 'portfolio',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/PortfolioView.vue'),
+      component: PortfolioView,
     },
     {
-      path: '/backlog',
-      name: 'backlog',
-      component: BacklogView,
+      path: '/now',
+      name: 'now',
+      component: nowView,
+    },
+    {
+      path: '/gamelog',
+      name: 'gamelog',
+      component: gamelogView,
+    },
+    {
+      path: '/collageportfolio',
+      name: 'collageportfolio',
+      component: collagePortfolioView,
+    },
+    {
+      path: '/aboutme',
+      name: 'aboutme',
+      component: aboutmeView,
+    },
+    {
+      path: '/changelog',
+      name: 'changelog',
+      component: changelogView,
     },
   ],
 })

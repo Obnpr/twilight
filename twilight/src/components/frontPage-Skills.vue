@@ -2,83 +2,79 @@
     import { ref } from 'vue'
     import buttonSrcDefault from '../assets/page-elements/moreButton.webp'
     import buttonSrcOpen from '../assets/page-elements/lessButton.webp'
-
-    const isMoreSkillsOpen = ref(false)
-    const moreButtonSrc = ref(buttonSrcDefault)
-    const moreButtonText = ref('View More')
-
-    function toggleMenu() {
-    isMoreSkillsOpen.value = !isMoreSkillsOpen.value
-    moreButtonSrc.value = isMoreSkillsOpen.value ? buttonSrcOpen : buttonSrcDefault
-    moreButtonText.value = isMoreSkillsOpen.value ? 'View Less' : 'View More'
-    }
 </script>
 
 <template>
     <h1>Skill Overview</h1>
     <article>
         <div>
-            <div>
-                <figure>
-                    <img
-                        src="../assets/logo/multimediaProducer.webp"
-                        alt="Film icon for Video Editing."
-                    />
-                </figure>
-                <p>Multimedia Producer</p>
-            </div>
-            <div>
-                <figure>
-                    <img
-                        src="../assets/logo/C++.webp"
-                        alt="C++ Logo"
-                    />
-                </figure>
-                <p>Programmer</p>
-            </div>
-            <div>
-                <figure>
-                    <img
-                        src="../assets/logo/debianlinux.webp"
-                        alt="Debian Linux Logo"
-                    />
-                </figure>
-                <p>Debian</p>
-            </div>
-            <div>
-                <figure>
-                    <img
-                        src="../assets/logo/processor.webp"
-                        alt="Icon of a Processor"
-                    />
-                </figure>
-                <p>PC Hardware</p>
-            </div>
-            <div>
-                <figure>
-                    <img
-                        src="../assets/logo/Docker.webp"
-                        alt="Docker Container Logo"
-                    />
-                </figure>
-                <p>Docker</p>
-            </div>
+          <div>
+              <figure>
+                  <img
+                      src="../assets/logo/multimediaProducer.webp"
+                      alt="Film icon for Video Editing."
+                  />
+              </figure>
+              <p>Video Editor</p>
+          </div>
+          <div>
+              <figure>
+                  <img
+                      src="../assets/logo/linuxtux.webp"
+                      alt="Linux Tux"
+                  />
+              </figure>
+              <p>Linux</p>
+          </div>
+          <div>
+              <figure>
+                  <img
+                      src="../assets/logo/personal/programing.webp"
+                      alt="Average Linux terminal default ' >_ '"
+                  />
+              </figure>
+              <p>Programer</p>
+          </div>
+          <div>
+              <figure>
+                  <img
+                      src="../assets/logo/processor.webp"
+                      alt="Icon of a Processor"
+                  />
+              </figure>
+              <p>PC <br>Hardware</p>
+          </div>
+          <div>
+              <figure>
+                  <img
+                      src="../assets/logo/Docker.webp"
+                      alt="Docker Container Logo"
+                  />
+              </figure>
+              <p>Docker</p>
+          </div>
+          <div>
+              <figure>
+                  <img
+                      src="../assets/logo/personal/network.webp"
+                      alt="Docker Container Logo"
+                  />
+              </figure>
+              <p>Network</p>
+          </div>
         </div>
     </article>
-
-    <div class="more-button">
-        <a @click="toggleMenu">
-            <img class="more-button" type="image" :src="moreButtonSrc" alt="Expand button for more Skills" />
-            <p class="more-button">{{ moreButtonText }}</p>
-        </a>
-    </div>
-
-    <Transition name="slide">
-    <h2 v-if="isMoreSkillsOpen">Skills</h2>
-    </Transition>
-    <Transition name="slide">
-    <article v-if="isMoreSkillsOpen" class="container-formating">
+    <article  class="containerFormating">
         <div>
+          <div>
+              <figure>
+                  <img
+                      src="../assets/logo/debianlinux.webp"
+                      alt="Debian Linux Logo"
+                  />
+              </figure>
+              <p>Debian</p>
+          </div>
             <div>
                 <figure>
                 <img
@@ -91,20 +87,20 @@
             <div>
                 <figure>
                 <img
-                    src="../assets/logo/Godot.webp"
-                    alt="Godot Engine Logo"
-                />
-                </figure>
-                <p>GDScript</p>
-            </div>
-            <div>
-                <figure>
-                <img
                     src="../assets/logo/vue.webp"
                     alt="Vue Logo"
                 />
                 </figure>
-                <p>Vue</p>
+                <p>VueJS</p>
+            </div>
+            <div>
+                <figure>
+                <img
+                    src="../assets/logo/dockercompose.webp"
+                    alt="Docker Compose Logo"
+                />
+                </figure>
+                <p>Docker <br>Compose</p>
             </div>
             <div>
                 <figure>
@@ -118,20 +114,16 @@
             <div>
                 <figure>
                 <img
-                    src="../assets/logo/dockercompose.webp"
-                    alt="Docker Compose Logo"
+                    src="../assets/logo/Godot.webp"
+                    alt="Godot Engine Logo"
                 />
                 </figure>
-                <p>Docker Compose</p>
+                <p>GDScript</p>
             </div>
         </div>
     </article>
-    </Transition>
-    <Transition name="slide">
-        <h2 v-if="isMoreSkillsOpen">Additional skills</h2>    
-    </Transition>
-    <Transition name="slide">
-        <article class="container-formating" v-if="isMoreSkillsOpen" >
+        <h2 >Additional skills</h2>
+        <article class="containerFormating"  >
             <div>
                 <div>
                     <figure>
@@ -158,25 +150,7 @@
                         alt="Ubiquiti Logo"
                     />
                     </figure>
-                    <p>Ubiquiti Products</p>
-                </div>
-                <div>
-                    <figure>
-                    <img
-                        src="../assets/logo/HTML5.webp"
-                        alt="HTML5 Logo"
-                    />
-                    </figure>
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <figure>
-                    <img
-                        src="../assets/logo/CSS3.webp"
-                        alt="CSS3 Logo"
-                    />
-                    </figure>
-                    <p>CSS</p>
+                    <p>Ubiquiti</p>
                 </div>
                 <div>
                     <figure>
@@ -198,21 +172,17 @@
                 </div>
             </div>
         </article>
-    </Transition>
-    <Transition name="slide">
-    <h2 v-if="isMoreSkillsOpen">Personal toolkit</h2>
-    </Transition>
-    <Transition name="slide">
-        <article class="container-formating" v-if="isMoreSkillsOpen">
+    <h2>Software toolkit</h2>
+        <article class="containerFormating" >
             <div>
                 <div>
                     <figure>
                         <img
-                            src="../assets/logo/shotcut.webp"
-                            alt="Shotcut Logo"
+                            src="../assets/logo/davinciresolve.webp"
+                            alt="Davinci Resolve logo"
                         />
                     </figure>
-                    <p>Shotcut</p>
+                    <p>Davinci<br>Resolve</p>
                 </div>
                 <div>
                     <figure>
@@ -234,7 +204,6 @@
                 </div>
             </div>
         </article>
-    </Transition>
 </template>
 
 <style scoped>
@@ -242,20 +211,21 @@ div {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 2vh;
-  margin-left: 3vh;
-  margin-right: 3vh;
-  margin-top: 1.5vh;
+  gap: 1vh;
+  padding: 1.5vh;
 }
 
 article {
-    max-width: 100%;
-    margin-bottom: 3vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
 }
 
 img {
   object-fit: contain;
-  max-height: 8vh;
+  height: 8vh;
 }
 
 h1 {
@@ -271,49 +241,25 @@ h2 {
 p {
   font-size: 2.6vh;
   margin-left: 1.5vh;
+  margin: 0%;
+  width: 10vh;
   height: 100%;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
 }
 
 figure {
   margin: 0%;
-  max-height: 10vh;
+  width: 10vh;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.more-button {
-    margin-top: 3vh;
-    margin-bottom: 1.5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 100%;
-    margin-left: 0vh;
-    margin-right: 0vh;
-}
-
-.more-button a {
-    cursor: pointer;
-}
-
-.more-button img {
-    height: 7vh;
-}
-
-.more-button p {
-    margin-top: 0.8rem;
-    margin-left: 0rem;
-}
-
-.slide-enter-active,
-.slide-leave-active {
-  transition: all 0.3s ease;
-}
-
-.slide-enter-from,
-.slide-leave-to {
-  opacity: 0;
-  transform: translateY(-20px);
+.container-formating {
+  width: 50vh;
 }
 
 @media (max-width: 500px) {
@@ -322,20 +268,18 @@ div {
     justify-content: start;
     flex-wrap: wrap;
     gap: 1vh;
-    margin-left: 0vh;
-    margin-right: 0vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    height: 100%;
+    width: 100%;
 }
 
 article {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 0vh;
 }
 
 img {
-    object-fit: contain;
-    max-height: 6vh;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -349,20 +293,19 @@ h2 {
 }
 
 p {
-    display: flex;
-    align-items: center;
-    font-size: 2.3vh;
-    margin: 0%;
-    height: 100%;
+  display: flex;
+  text-align: end;
+  font-size: 2.3vh;
+  margin: 0%;
+  width: 40%;
 }
 
 figure {
-    max-height: 10vh;
-    margin-right: 2vh;
+  margin-right: 2vh;
 }
 
-.container-formating div {
-    width: 30vh;
+.containerFormating {
+  width: 100%;
 }
 
 }

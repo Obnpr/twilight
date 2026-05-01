@@ -17,12 +17,12 @@
 
 <style scoped>
 .logo-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.2rem;
 }
 
 img {
@@ -38,19 +38,19 @@ h1 {
 
 @media (max-width: 500px) {
 .logo-title {
-    width: 100%;
-    gap: 1rem;
+  width: 100%;
+  gap: 1rem;
 }
 
 img {
-    max-height: 8vh;
-    font-size: 15vh;
+  max-height: 7vh;
+  font-size: 15vh;
 }
 
 h1 {
-    font-size: 4vh;
-    font-weight: bold;
-    color: white;
+  font-size: 3.4vh;
+  font-weight: bold;
+  color: white;
 }
 
 }
