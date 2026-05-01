@@ -6,7 +6,7 @@
         <div class="contentStructure">
           <figure>
             <img
-              src="/src/assets/collageProject/projects/game-image.webp"
+              src="/src/assets/collageProject/projects/na.webp"
               alt="Placeholder Game Image"
             />
           </figure>
@@ -28,6 +28,7 @@
                 href="https://github.com/Obnpr/code-graves"
                 target="_blank"
                 rel="noopener noreferrer"
+                id="disabled"
               >
                 View
               </a>
@@ -37,7 +38,7 @@
         <div class="contentStructure">
           <figure>
             <img
-              src="/src/assets/collageProject/projects/game-image.webp"
+              src="/src/assets/collageProject/projects/na.webp"
               alt="Placeholder Game Image"
             />
           </figure>
@@ -56,7 +57,7 @@
           </div>
             <div class="contentButtonAlign">
               <a
-                href="https://github.com/Obnpr/code-graves"
+                href="https://github.com/Obnpr/CienPi"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -87,10 +88,9 @@
           </div>
             <div class="contentButtonAlign">
               <a
-                href="https://github.com/Obnpr/code-graves"
+                href="https://obednegron.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                id="disabled"
               >
                 View
               </a>
@@ -129,7 +129,7 @@
         <div class="contentStructure">
           <figure>
             <img
-              src="/src/assets/collageProject/projects/c++/na.webp"
+              src="/src/assets/collageProject/projects/na.webp"
               alt="Placeholder Game Image"
             />
           </figure>
@@ -178,10 +178,9 @@
           </div>
             <div class="contentButtonAlign">
               <a
-                href="https://github.com/Obnpr/code-graves"
+                href="https://obednegron.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                id="disabled"
               >
                 View
               </a>
@@ -190,8 +189,8 @@
         <div class="contentStructure">
           <figure>
             <img
-              src="/src/assets/collageProject/projects/game-image.webp"
-              alt="Placeholder Game Image"
+              src="/src/assets/collageProject/projects/na.webp"
+              alt="N/A Image for it"
             />
           </figure>
           <div class="contentLogoNText">
@@ -209,9 +208,9 @@
           </div>
             <div class="contentButtonAlign">
               <a
-                href="https://github.com/Obnpr/Fuelzone-Blogs"
                 target="_blank"
                 rel="noopener noreferrer"
+                id="disabled"
               >
                 View
               </a>
@@ -239,7 +238,6 @@
           </div>
             <div class="contentButtonAlign">
               <a
-                href="http://localhost:5174/collage-portfolio"
                 target="_blank"
                 rel="noopener noreferrer"
                 id="disabled"

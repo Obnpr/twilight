@@ -15,9 +15,6 @@
         </li>
         <h2>Biography</h2>
         <li>
-        <a href="#frontpage" >Front page</a>
-        </li>
-        <li>
         <a href="#biography" >Biography</a>
         </li>
         <li>
