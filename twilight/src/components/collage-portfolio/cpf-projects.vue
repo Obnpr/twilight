@@ -20,7 +20,7 @@
             <h2>Graves</h2>
           </div>
           <div class="contentText">
-            <p>In Early development, It's going to be a 2.5D, isometric and rougelike card game. Will utilize a 'gacha' system for its unique cards.</p>
+            <p>In Early development; It's going to be a 2.5D, isometric and rougelike card game. Will utilize a 'gacha' system for its unique cards.</p>
             <p>Currently in-develop, utilizing the Godot Engine, with it's own language GDScript.</p>
           </div>
             <div class="contentButtonAlign">
@@ -29,7 +29,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Github
+                View
               </a>
             </div>
         </div>
@@ -52,7 +52,7 @@
           </div>
           <div class="contentText">
             <p>Name's a wordplay between the Spanish word 'ciempiés' (centipedes) and Pi (π). Still in Early development, It's going to be a 2.5D isometric shooter game, fighting against crawling and flying insects, and centipedes.</p>
-            <p>Currently in-develop, utilizing the Godot Engine, with it's own language GDScript.</p>
+            <p>Currently paused development; utilizing the Godot Engine, with it's own language GDScript.</p>
           </div>
             <div class="contentButtonAlign">
               <a
@@ -60,7 +60,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Github
+                View
               </a>
             </div>
         </div>
@@ -68,18 +68,18 @@
         <div class="contentStructure">
           <figure>
             <img
-              src="/src/assets/collageProject/projects/game-image.webp"
+              src="/src/assets/collageProject/projects/web/obednegron/preview.webp"
               alt="Placeholder Game Image"
             />
           </figure>
           <div class="contentLogoNText">
             <figure>
               <img
-                src="/src/assets/collageProject/projects/web/fuelzone/fuelzone.webp"
-                alt="Logo of FuelZone"
+                src="/src/assets/collageProject/projects/web/obednegron/obednegron.webp"
+                alt="Logo of Obed Negron"
               />
             </figure>
-            <h2>Obnpr</h2>
+            <h2 id="smaller">ObedNegron</h2>
           </div>
           <div class="contentText">
             <p>My personal website used for both my personal and professional showcase, or creating other personal hobbies.</p>
@@ -92,7 +92,7 @@
                 rel="noopener noreferrer"
                 id="disabled"
               >
-                Github
+                View
               </a>
             </div>
         </div>
@@ -104,7 +104,7 @@
         <div class="contentStructure">
           <figure>
             <img
-              src="/src/assets/collageProject/projects/game-image.webp"
+              src="/src/assets/collageProject/projects/c++/percentage/preview.webp"
               alt="Placeholder Game Image"
             />
           </figure>
@@ -112,7 +112,7 @@
             <h2>Project #1</h2>
           </div>
           <div class="contentText">
-            <p>Program calculates the X and X to give X.</p>
+            <p>Program calculates a percentage of a number the user enters. The program used 5% as an example. Can use multiple numbers to calculate, if the user desires.</p>
             <p>Terminal based. C++ only.</p>
           </div>
             <div class="contentButtonAlign">
@@ -121,7 +121,7 @@
                 rel="noopener noreferrer"
                 id="disabled"
               >
-                Github
+                View
               </a>
             </div>
         </div>
@@ -129,7 +129,7 @@
         <div class="contentStructure">
           <figure>
             <img
-              src="/src/assets/collageProject/projects/game-image.webp"
+              src="/src/assets/collageProject/projects/c++/na.webp"
               alt="Placeholder Game Image"
             />
           </figure>
@@ -137,7 +137,7 @@
             <h2>Project #2</h2>
           </div>
           <div class="contentText">
-            <p>Program calculates the X and X to give X.</p>
+            <p>Questionaire program, where the user select between add anwsers or view old saved anwsers was saved in .txt format. Multiple question, from true/false, to custom paragraph questions.</p>
             <p>Terminal based. C++ only.</p>
           </div>
             <div class="contentButtonAlign">
@@ -146,55 +146,31 @@
                 rel="noopener noreferrer"
                 id="disabled"
               >
-                Github
-              </a>
-            </div>
-        </div>
-
-        <div class="contentStructure">
-          <figure>
-            <img
-              src="/src/assets/collageProject/projects/game-image.webp"
-              alt="Placeholder Game Image"
-            />
-          </figure>
-          <div class="contentLogoNText">
-            <h2>Project #3</h2>
-          </div>
-          <div class="contentText">
-            <p>Program calculates the X and X to give X.</p>
-            <p>Terminal based. C++ only.</p>
-          </div>
-            <div class="contentButtonAlign">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                id="disabled"
-              >
-                Github
+                View
               </a>
             </div>
         </div>
       </div>
     </div>
+
     <h2 id="webprojects" class="structureTitle">Web Projects</h2>
     <div class="showcaseDiv">
       <div class="showcaseRow">
         <div class="contentStructure">
           <figure>
             <img
-              src="/src/assets/collageProject/projects/game-image.webp"
+              src="/src/assets/collageProject/projects/web/obednegron/preview.webp"
               alt="Placeholder Game Image"
             />
           </figure>
           <div class="contentLogoNText">
             <figure>
               <img
-                src="/src/assets/collageProject/projects/web/fuelzone/fuelzone.webp"
-                alt="Logo of FuelZone"
+                src="/src/assets/collageProject/projects/web/obednegron/obednegron.webp"
+                alt="Logo of Obed Negron"
               />
             </figure>
-            <h2>Obnpr</h2>
+            <h2 id="smaller">ObedNegron</h2>
           </div>
           <div class="contentText">
             <p>My personal website used for both my personal and professional showcase, or creating other personal hobbies.</p>
@@ -207,7 +183,7 @@
                 rel="noopener noreferrer"
                 id="disabled"
               >
-                Github
+                View
               </a>
             </div>
         </div>
@@ -237,21 +213,21 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Github
+                View
               </a>
             </div>
         </div>
         <div class="contentStructure">
           <figure>
             <img
-              src="/src/assets/collageProject/projects/game-image.webp"
+              src="/src/assets/collageProject/projects/web/freejailbreak/preview.webp"
               alt="Placeholder Game Image"
             />
           </figure>
           <div class="contentLogoNText">
             <figure>
               <img
-                src="/src/assets/collageProject/projects/web/fuelzone/fuelzone.webp"
+                src="/src/assets/collageProject/projects/web/freejailbreak/icon.webp"
                 alt="Logo of FuelZone"
               />
             </figure>
@@ -299,6 +275,7 @@
 
 .showcaseRow {
   display: flex;
+  justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
   height: 100%;
@@ -340,6 +317,7 @@
   width: 9vh;
   height: 9vh;
   margin: 0%;
+  padding: 1vh;
 }
 
 .contentLogoNText img {
@@ -362,26 +340,21 @@ a {
   display: flex;
   justify-content: center;
   padding: 10px 10px;
-  color: white;
-  background-color: #772014;
-  border: 2px solid #772014;
-  border-radius: 3px;
-  text-decoration: none;
+  color: #772014;
+  text-decoration: underline;
   font-weight: bold;
-  font-size: 1.8vh;
+  font-size: 3vh;
   transition: all 0.3s ease;
   width: 10vh;
 }
 
 a:hover {
-  background-color: #5c180f;
-  border: 2px solid #5c180f;
+  color: #4d130b;
 }
 
 a#disabled {
-  color: #a7a7a7;
-  background-color: #380e09;
-  border: 2px solid #380e09;
+  color: #772014;
+  text-decoration: line-through;
   cursor: not-allowed;
 }
 

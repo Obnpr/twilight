@@ -3,7 +3,7 @@
       <h1>Links</h1>
         <div class="container-child">
             <figure>
-                <a href="/pdf/Resume-ObedNegron.pdf" target="_blank">
+                <a href="/pdf/resumeobednegron.pdf" target="_blank">
                 <img type="image" src="../assets/logo/resume.webp" alt="Resume Icon" />
                 </a>
             </figure>
